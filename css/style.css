@@ -1,0 +1,332 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.title {
+font-family: 'Arapey', serif;
+font-size: 60px;
+font-weight: regular;
+color: #9DB0D1;
+text-align: center;
+line-height: 66px;
+margin: 100px 0 50px 0;
+}
+.sub-title {
+font-family: Verdana, sans-serif;
+font-size: 20px;
+font-weight: regular;
+line-height: 25px;
+color: #000000;
+text-align: center;
+width: 1024px;
+margin: 0 auto 50px auto;
+}
+.btn-top {
+background: #EBAC87;
+width: 267px;
+height: 80px;
+border-radius: 10px;
+border: 0;
+font-family: 'Arapey', serif;
+font-weight: regular;
+font-size: 30px;
+line-height: 32px;
+color: #FFFFFF;
+text-align: center;
+text-transform: uppercase;
+display: block;
+cursor: pointer;
+margin: 0 auto 50px auto;
+}
+.btn-top:hover {
+background: #FFFFFF;
+color: #EBAC87;
+border: 2px solid #EBAC87;
+}
+.list {
+display: flex;
+justify-content: center;
+margin: 0 0 48px 0;
+}
+.check {
+font-family: Verdana, sans-serif;
+font-size: 20px;
+font-weight: regular;
+line-height: 24px;
+color: #000000;
+text-decoration: none;
+margin: 0 25px 0 25px;
+}
+.tick {
+width: 60px;
+height: 60px;
+background: #9DB0D1;
+border-radius: 50%;
+display: inline-block;
+padding: 17px 15px 18px 15px;
+margin: 0 auto 15px auto;
+}
+.check:hover .tick {
+background: none;
+color: #9DB0D1;
+border-radius: 50%;
+border: 2px solid #9DB0D1;
+}
+.check:hover .tick svg * {
+  fill: #9DB0D1;
+}
+.clouds {
+background: url(../img/bg-cloud.png) repeat-x top / auto 200px, linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
+font-family: 'Arapey', sans-serif;
+font-size: 40px;
+font-weight: regular;
+line-height: 44px;
+text-align: center;
+padding: 250px 120px 104px 120px;
+}
+.container {
+background: #87C6EB;
+}
+.boxes {
+display: flex;
+width: 1200px;
+margin: 0 auto 35px auto;
+justify-content: space-between;
+}
+.square1 {
+width: 350px;
+background: #FFFFFF;
+border-radius: 10px;
+}
+.circle1 {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #EBAC8766;
+font-family: Verdana, sans-serif;
+font-size: 30px;
+font-weight: regular;
+line-height: 60px;
+color: #FFFFFF;
+text-align: center;
+margin: 20px;
+}
+.mountain {
+background: #EBAC87;
+width: 310px;
+height: 310px;
+margin: 0 auto 0 auto;
+display: block;
+}
+.text {
+font-family: Verdana, sans-serif;
+font-size: 20px;
+font-weight: normal;
+line-height: 24px;
+width: 260px;
+margin: 20px;
+}
+.strong {
+font-weight: bold;
+}
+.square2 {
+width: 350px;
+background: #FFFFFF;
+border-radius: 10px;
+}
+.circle2 {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #EBAC8799;
+font-family: Verdana, sans-serif;
+font-size: 30px;
+font-weight: regular;
+line-height: 60px;
+color: #FFFFFF;
+text-align: center;
+margin: 20px;
+}
+.square3 {
+width: 350px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+.circle3 {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #EBAC87;
+font-family: Verdana, sans-serif;
+font-size: 30px;
+font-weight: regular;
+line-height: 60px;
+color: #FFFFFF;
+text-align: center;
+margin: 20px;
+}
+.bottom {
+background: url(../img/mountainbig.png) bottom right / auto 475px no-repeat;
+min-height: 475px;
+width: 1200px;
+margin: 0 auto;
+}
+.headline {
+font-family: 'Arapey', serif;
+font-size: 40px;
+line-height: 44px;
+font-weight: regular;
+width: 600px;
+padding: 40px 0 50px 0;
+color: #FFFFFF;
+}
+.bottom-p {
+font-family: Verdana, sans-serif;
+font-size: 20px;
+line-height: 24px;
+font-weight: regular;
+width: 580px;
+color: #000000;
+margin: 0 0 50px 0;
+}
+.btn-bottom {
+background: #FFFFFF;
+width: 267px;
+height: 80px;
+border-radius: 10px;
+border: 0;
+font-family: 'Arapey', serif;
+font-weight: regular;
+font-size: 30px;
+line-height: 32px;
+color: #EBAC87;
+text-align: center;
+text-transform: uppercase;
+display: block;
+cursor: pointer;
+margin: 0 0 50px 0;
+}
+.bottom-line {
+width: 1200px;
+display: flex;
+justify-content: space-between;
+}
+.btn-bottom:hover {
+background: #EBAC87;
+color: #FFFFFF;
+border: 2px solid #FFFFFF;
+}
+.qa {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: #EBAC87;
+font-family: Verdana, sans-serif;
+font-weight: regular;
+font-size: 60px;
+line-height: 73px;
+color: #FFFFFF;
+text-align: center;
+border: 0;
+cursor: pointer;
+}
+.qa:hover {
+background: #FFFFFF;
+color: #EBAC87;
+border: 2px solid #EBAC87;
+}
+.social {
+width: 1200px;
+display: flex;
+justify-content: space-between;
+lign-items: center;
+padding: 50px 0 50px 0;
+margin: 0 auto;
+}
+.btn-last {
+background: #EBAC87;
+width: 267px;
+height: 80px;
+border-radius: 10px;
+border: 0;
+font-family: 'Arapey', serif;
+font-weight: regular;
+font-size: 30px;
+line-height: 32px;
+color: #FFFFFF;
+text-align: center;
+text-transform: uppercase;
+display: block;
+cursor: pointer;
+margin: 0 0 0 0;
+}
+.btn-last:hover {
+background: #FFFFFF;
+color: #EBAC87;
+border: 2px solid #EBAC87;
+}
+.links {
+margin: 28px 0 0 0;
+}
+.links a {
+text-decoration: none;
+margin: 0 0 0 32px;
+}
+.bottom-p a {
+color: black;
+}
+
