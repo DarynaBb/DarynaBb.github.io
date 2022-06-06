@@ -15,26 +15,81 @@
     </head>
     <body>
         <!-- Коментарий -->
-        
-            <div class="logo">
-                <svg width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
-                    <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
-                </svg>
-            </div>          
-             <nav class="navigation">
-                <a href="#">gallery</a>
-                <a href="#">history</a>
-                <a href="#">contact us</a>  
-            </nav>
+        <header class="header" id="header">
+        <div class="media">
+            <div class="logo-menu">
+                <div class="logo">
+                    <svg width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
+                        <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
+                    </svg>
+                </div>
+            </div> 
+        </div>            
+                <button class="btn-burger" id="btn-burger">
+                    <svg width="48" height="31" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0 0H48V5H0V0Z" fill="#005BBB"/>
+                     <path d="M0 13H48V18H0V13Z" fill="#005BBB"/>
+                     <path d="M48 26H0V31H48V26Z" fill="#005BBB"/>
+                    </svg>
+                </button>    
+            <div class="header-navigation">           
+                <nav class="navigation">
+                    <a href="#">gallery</a>
+                    <a href="#">history</a>
+                    <a href="#">contact us</a>  
+                </nav>
+                <div class="dropdown">
+                    <button class="btn-close" id="btn-close">
+                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9998 15.9646L3.79689 0.761719L0.261353 4.29725L15.4642 19.5001L0.261485 34.7029L3.79702 38.2384L18.9998 23.0357L34.2025 38.2384L37.738 34.7028L22.5353 19.5001L37.7381 4.29726L34.2026 0.761727L18.9998 15.9646Z" fill="white"/>
+                        </svg>
+                    </button> 
+                    <div class="input-cover-menu">
+                        <div class="input">
+                            <textarea class="textarea" placeholder="type your message here"></textarea>
+                            <button class="btn">SEND</button>
+                        </div> 
+                    </div>       
+                </div>
+            </div>           
+        </header>
             <div class="gallery">
-                <div class="slider1"><img src="img/image1.png"></div>
-                <div class="slider2"><img src="img/image2.png"></div>
-                <div class="slider3"><img src="img/image3.png"></div>
-                <div class="slider4"><img src="img/image4.png"></div>
-                <div class="slider5"><img src="img/image5.png"></div>    
+                <div class="slider"><img src="img/image1.png"></div>
+                <div class="slider"><img src="img/image2.png"></div>
+                <div class="slider"><img src="img/image3.png"></div>
+                <div class="slider"><img src="img/image4.png"></div>
+                <div class="slider"><img src="img/image5.png"></div>    
             </div>
+        </div>
+            <div class="text">
+                <p class="about">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+                <p class="about">Please take a look at our history and contact us if you are intrested.  We would be really glad to join the help to Ukraine as we can.</p> 
+                <p class="about">Glory to Ukraine!</p>
+            </div>
+            <div class="middle">
+                <h2 class="title">HISTORY</h2>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <p><span class="big-font">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.
+                    </p>    
+                </div>    
+                <div class="box">
+                    <p><span class="big-font">1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra, vehicula non lorem.
+                    </p>   
+                </div>
+            </div>
+            <div class="middle">
+                <h2 class="title">CONTACT US</h2>
+            </div>
+            <div class="input-cover">
+                <div class="input">
+                    <textarea class="textarea" placeholder="type your message here"></textarea>
+                    <button class="btn">SEND</button>
+                </div> 
+            </div>       
             <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -51,7 +106,7 @@
                   breakpoint: 1199,
                   settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                   }
                 },
                 {
@@ -63,45 +118,22 @@
                 }
               ]
             });
-            </script>
-            <h1 class="text">
-                <p class="about">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
-                <p class="about">Please take a look at our history and contact us if you are intrested.  We would be really glad to join the help to Ukraine as we can.</p> 
-                <p class="about">Glory to Ukraine!</p>
-            </h1>
-            <div class="middle">
-                <div class="line-before"></div>
-                <h2 class="title">HISTORY</h2>
-                <div class="line-after"></div>
-            </div>
-            <div class="container">
-                <div class="container-left">
-                    <div class="yellow-left"></div>
-                    <div class="blue-left">
-                        <div class="blue-left-text"><span class="big-font">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.
-                        </div>    
-                    </div>    
-                </div>    
-                <div class="container-right">
-                    <div class="yellow-right"></div>
-                    <div class="blue-right">
-                        <div class="blue-right-text"><span class="big-font">1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra, vehicula non lorem.
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="line-before"></div>
-                <h2 class="title">CONTACT US</h2>
-                <div class="line-after"></div>
-            </div>
-            <div class="input-cover">
-                <div class="input">
-                    <textarea class="textarea" placeholder="type your message here"></textarea>
-                    <button class="btn">SEND</button>
-                </div> 
-            </div>       
-            
 
+            const btn__burger = document.querySelector('#btn-burger');
+            const btn__close = document.querySelector('#btn-close');
+            const menu__open = document.querySelector('.dropdown');
+            const header = document.querySelector('#header');
+
+
+            btn__burger.addEventListener('click', function(){
+            header.classList.add('menu-open');
+
+            btn__close.addEventListener('click', function(){
+
+            header.classList.replace('menu-open', 'header')
+    })
+})
+            </script>
+            
     </body>
 </html>
