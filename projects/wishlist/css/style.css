@@ -645,7 +645,9 @@ fill: #1F3865;
 .wishlist__title {
     padding: 60px 0 0 0;   
 }
-
+.cards__column_wishlist img {
+    border-radius: 6px;
+}
 .cards__body_wishlist {
     flex: 1 1 33.333%;
     flex-wrap: wrap;
@@ -701,7 +703,8 @@ fill: #1F3865;
     width: 100%;
     background-color: #FC6A57CC;
     z-index: 10;
-    opacity: 0;    
+    opacity: 0;
+    border-radius: 6px;    
 }
 .cards__column_wishlist:hover:after {
     cursor: pointer;
