@@ -23,13 +23,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-*[id]:before {
-    display: block;
-    content: " ";
-    margin-top: -75px;
-    height: 75px;
-    visibility: hidden;
-  }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -69,14 +62,14 @@ section {
  display: flex;
  position: relative;
  justify-content: space-between;
- width: 100%;
+ width: 100vw;
 }
 .header-menu {
     font-size: 16px;
     line-height: 22px;
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     height: 120px;
     background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
@@ -86,7 +79,7 @@ section {
 }
 .hm {
     display: flex;
-  margin: 40px 140px 40px auto;
+  margin: 40px 130px 40px auto;
 }
 .hm li {
     display: flex;
@@ -105,7 +98,6 @@ section {
   margin: 0 5px ;
   justify-content: center;
   z-index: 100;
-  opacity: 1;
 }
 .link_menu:hover {
   background: #FC6A57;
@@ -121,7 +113,7 @@ section {
   position: fixed;
   height: 120px;
   background: transparent;
-  z-index: 10;
+  z-index: 20;
   padding: 40px 0 40px 80px;
   font-family: 'Baloo 2', cursive;
   font-weight: 800;
@@ -148,7 +140,7 @@ section {
   bottom: 0;
 }
 .box {
-  margin: 230px 60px auto 80px;
+  margin: 230px 80px auto 80px;
   max-width: 640px;
   font-size: 20px;
   font-family:Nunito ;
@@ -188,11 +180,17 @@ section {
   right: 146px;
   padding: 120px 75px 5px 75px;
 }
+.counter-text{
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+}
 .counter-clock {
     position: absolute;
-    left: 16.50%;
-    right: 9.50%;
+    left: 2%;
+    right: 2%;
     top: 47.48%;
+    text-align: center;
     bottom: 37.42%;
     font-family: 'Baloo 2';
     color: #FC6A57;
@@ -885,26 +883,13 @@ and (max-width: 1080px) {
     margin: 10px auto;
     }
     .link_menu {
-        display: inline-block;
-        height: 40px;
         text-decoration: none;
         background: #FC6A57;
         text-decoration: none;
         color: #fff;
-        font-family: Nunito;
-        font-size: 16px;
-        line-height: 22px; 
-        border-radius: 20px;
-        padding:9px 20px ;
         margin: 0 10px ;
-        justify-content: center;
         box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 1),0px -6px 10px 0px rgba(31, 56, 101, 0.15);
       }
-      .link_menu:hover {
-        background: transparent;
-        color: #FC6A57;
-        box-shadow:inset 0px 4px 15px 0px rgba(31, 56, 101, 0.15) ,0px -6px 10px 0px rgba(255, 255, 255, 1) ,0px 4px 15px 0px rgba(253, 0, 0, 0.952) ,0px 4px 15px 0px rgba(31, 56, 101, 0.15);
-        }
     .social {
         display: flex;
         width: 100vw;
@@ -1048,17 +1033,6 @@ and (max-width: 760px) {
     .upper-decor{
         display: flex;
         position: absolute;
-       /* 
-        align-items: flex-start;
-        justify-content: start;
-        height: 280px;
-        max-width: 740px;
-        margin: 0 20px 0 20px;
-        position: static;
-        position: absolute;
-        width: 100%;
-        height: 280px;
-        margin: 0 0 0 0;*/
         left: 0;
         bottom: 0;
         top: unset;
@@ -1080,7 +1054,18 @@ and (max-width: 650px) {
         opacity: 1;
         box-shadow: none;
         }
-      .icon-drm, .icon-br, .icon-gi, .icon-bi, .icon-wish {
+    .link_menu:hover {
+        background: #fff;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: none;
+        }
+    .hm {
+        margin: 10px 30px;
+        width: 100vw;
+        justify-content: space-between;
+        }
+    .icon-drm, .icon-br, .icon-gi, .icon-bi, .icon-wish {
         display: flex;
         }
 }
@@ -1089,6 +1074,9 @@ and (max-width: 475px) {
     .link_menu {
         margin:0 20px;
     }
+    .hm {
+        margin: 10px 20px;
+        }
     .avatar {
         display: flex;
         max-width: 357px;
