@@ -99,6 +99,7 @@ body {
     margin-top: 65px;
     margin-bottom: 33px;
     padding-left: 60px;
+    padding-right: 60px;
 }
 .cards-top__content {
     padding-left: 60px;
@@ -125,7 +126,7 @@ body {
     background-color: #333D3F;
 } */
 .cards__list li:before {
-content: url(../images/icon-check.svg);
+content: url(../images/check-icon.svg);
 /* content: '✓'; */
 width: 9px;
 height: 7px;
@@ -157,10 +158,10 @@ margin-right: 16px;
     height: 99.9%;
     
 }
-.card-bottom__title-small {
-    width: 239px;
+.card-bottom__title {
     padding-top: 60px; 
     padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 33px; 
 }
 .card-bottom__content {
@@ -176,11 +177,12 @@ margin-right: 16px;
     margin-left: 20px;
     padding: 1px;
 }
-.card-bottom__title {
-    padding-top: 59px; 
+/* .card-bottom__title {
+    padding-top: 60px; 
     padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 33px; 
-}
+} */
 /***** BUTTONS *******/
 .course-structure__buttons {
     display: flex;
