@@ -156,7 +156,8 @@ and (max-width: 799px) {
     background: #DEE57F;
     margin: 10px;
     width: 10px;
-    height: 12px;
+    height: 10px;
+    padding: 0;
     
 } 
 .slick-active button {
