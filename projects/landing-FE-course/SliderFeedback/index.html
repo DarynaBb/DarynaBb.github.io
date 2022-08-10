@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Course Structure</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    </head>
+
+    <body>
+        <section class="feedback">
+            <div class="feedback-container">
+                <div class="feedback__title">
+                    <p class="subtitle">Що учні пишуть після проходження курсу?</p>
+                    <h2 class="main-title">Відгуки</h2>
+                </div>
+                <div class="gallery">
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#">
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatibus magnam rem ad incidunt vero ipsam voluptatum iusto eos dolor earum. Saepe, quam obcaecati repudiandae asperiores quod dignissimos expedita fugit!</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#">
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#">
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="feedback__card">
+                            <a href="#">
+                                <div class="feedback__column">
+                                    <p class="feedback__text">Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet.</p>
+                                    <p class="green-font">@instagram_username</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $('.gallery').slick({
+              dots: true,
+              prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+              nextArrow: '<button class="slide-arrow next-arrow"></button>',
+              infinite: true,
+              speed: 300,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              responsive: [
+                {
+                  breakpoint: 850,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+            });
+</script>
+    </body>
+</html>

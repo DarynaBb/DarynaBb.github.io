@@ -1,0 +1,164 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+    list-style: none;
+  }
+body {
+    line-height: 1;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333D3F;
+}
+a {
+    text-decoration: none;
+    color: #333D3F;
+}
+.subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #333D3F;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+.main-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #333D3F;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-size: 44px;
+  }
+  @media only screen
+
+and (max-width: 799px) {
+  .main-title {
+    font-size: 36px;
+  }
+}
+.green-font {
+    color: #8ABD63;
+    padding: 24px 30px 60px;
+    text-align: center;
+}
+.feedback-container {
+    max-width: 1214px;
+    margin-right: 30px;
+}
+.feedback__title {
+    margin: 20px;
+}
+.gallery {
+    max-width: 1014px;
+    margin-left: 100px;
+    margin-right: 30px;
+}
+.slider {
+  margin: 13px;
+}
+.feedback__card {
+    background: linear-gradient(95.6deg, #FFE7D9 12.37%, #FFEBB7 35.9%, #EDF493 65.82%, #D2FFAF 88.95%);
+    border-radius: 60px;
+    padding: 2px;
+    margin: 20px;  
+}
+.feedback__column {
+    background: #FFFFFF;
+    border-radius: 60px;
+    padding: 2px;
+    height: 100%;
+}
+.feedback__text {
+    padding: 60px 30px 0;
+    text-align: center;
+}
+.slick-list {
+    /* position: relative; */
+}
+.prev-arrow {
+    background: url(../images/left.png) no-repeat;
+    position: absolute;
+    top: 117px;
+    left: -50px;
+    width: 16px;
+    height: 18px;
+    border: 0;
+    cursor: pointer;
+  }
+  .next-arrow {
+    background: url(../images/right.png);
+    border: 0;
+    cursor: pointer;
+    display: block; 
+    height: 18px; 
+    margin-left: 62px;
+    position: absolute;
+    right: -44px;
+    top: 117px;
+    width: 16px;
+  }
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slick-dots button {
+    color: transparent;
+    border-radius: 50%;
+    border:0;
+    background: #DEE57F;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    
+} 
+.slick-active button {
+    background: #8ABD63;
+    width: 20px;
+    height: 20px;
+}
+.slick-track {
+	display: flex;
+}    
+.slick-slide {
+		display: flex;
+		height: auto;
+		align-items: center; 
+		justify-content: center; 
+}
+
+
