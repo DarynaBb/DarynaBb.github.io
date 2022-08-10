@@ -105,9 +105,6 @@ and (max-width: 799px) {
     padding: 60px 30px 0;
     text-align: center;
 }
-.slick-list {
-    /* position: relative; */
-}
 .prev-arrow {
     background: url(../images/left.png) no-repeat;
     position: absolute;
@@ -124,26 +121,42 @@ and (max-width: 799px) {
     cursor: pointer;
     display: block; 
     height: 18px; 
-    margin-left: 62px;
     position: absolute;
     right: -44px;
     top: 117px;
     width: 16px;
   }
+  @media (max-width: 767px) {
+      .gallery {
+          margin-left: 50px;
+      }
+    .prev-arrow {
+        left: -10px;
+    }
+    .next-arrow {
+        right: -4px;
+  }
+  .feedback__column p {
+    padding: 20px;
+    text-align: center;
+}
+.feedback-container {
+    margin: 0;
+}
+  }
 .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .slick-dots button {
     color: transparent;
     border-radius: 50%;
-    border:0;
+    border: 0;
     background: #DEE57F;
     margin: 10px;
     width: 10px;
-    height: 10px;
+    height: 12px;
     
 } 
 .slick-active button {
