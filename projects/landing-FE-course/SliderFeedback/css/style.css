@@ -116,7 +116,7 @@ and (max-width: 799px) {
     cursor: pointer;
   }
   .next-arrow {
-    background: url(../images/right.png);
+    background: url(../images/right.png) no-repeat;
     border: 0;
     cursor: pointer;
     display: block; 
