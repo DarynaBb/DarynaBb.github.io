@@ -45,10 +45,6 @@ q:before, q:after {
 a {
     text-decoration: none;
 }
-.logo:hover svg * {
-    cursor: pointer;
-    fill: #D2FFAF;
-}
 .footer .icon svg * {
 fill: #8ABD63;
 }
