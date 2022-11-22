@@ -59,7 +59,9 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
-    max-width: ;
+}
+
+.wrapper {
     padding: 30px 35px;
 }
 
@@ -225,5 +227,15 @@ footer span:nth-of-type(2) {
     background-color: #40A737;
 }
 
+
+@media (min-width: 370px) and (max-width: 700px) {
+    .wrapper {
+        padding: 5px 5px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
 
 
