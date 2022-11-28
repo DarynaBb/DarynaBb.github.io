@@ -47,28 +47,27 @@ table {
 	border-spacing: 0;
 }
 
-img {
+* {
+    box-sizing: border-box;
+}
+
+img,
+svg {
   max-width: 100%;  
 }
+
+
 
 body {
     font-family:  'Tomorrow', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
-}
-
-.wrapper {
-    margin: 0 auto;
     min-width: 320px;
-    text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 6.25%;
+    padding: 20px 0;
 }
 
 header p {
@@ -77,14 +76,44 @@ header p {
     font-size: 1em;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.logo {
+    display: inline-block;
+}
+
 nav {
     display: none;
 }
 
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+} 
+
 .title {
     background: url(images/bg-1.png);
-    padding: 53px 6.25%;
+    padding-top: 53px; 
+    padding-bottom: 53px;
     background-size: cover;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title p {
@@ -92,6 +121,7 @@ nav {
     font-size: 1.625em;
     line-height: 1.4;
     letter-spacing: 3%;
+    
 }
 
 .title .full-text {
@@ -103,18 +133,32 @@ nav {
 }
 
 .about {
-    padding: 50px 6.25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-container, .production-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about p {
-    margin-top: 6.25%;
     font-family: 'Sintony', sans-serif;
     font-size: 1.25em;
     line-height: 1.4;
+    margin-top: 20px;
 }
 
+.about-image {
+    margin-bottom: 20px;
+}
+
+
 .history {
-    padding: 30px 6.25%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-image: url(images/bg-2.png);
     background-size: cover;
 }
@@ -129,7 +173,8 @@ nav {
 }
 
 .production {
-    padding: 50px 6.25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-family: 'Sintony', sans-serif;
 }
 
@@ -147,19 +192,18 @@ nav {
 
 }
 
-@media (min-width:1440px) {
+@media (min-width:1280px) {
 
-.container {
-    max-width: 1240px;
-}  
+ 
 
-header {
-    padding: 50px 8% 40px;
+.header-container {
+    padding-top: 50px;
+    padding-right: 40px;
 }
 
 nav {
     display: block;
-    max-width: 1240px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -194,7 +238,7 @@ header p {
 }
 
 .title {
-   padding: 38px 6% 0;
+   padding: 38px 0;
    font-size: 2.15em;
 }
 
@@ -214,16 +258,17 @@ header p {
 
 .about {
     font-size: 2em;
-    padding: 158px 16.3% 164px 6%;
+    padding-top: 158px;
+    padding-bottom: 164px;
 }
 
-.about .container {
-    display: flex;
+.about-container, .production-container {
+    flex-direction: row;
     
 }
 
 .about img {
-    margin-right: 2.6%;
+    margin-right: 136px;
 }
 
 .about p {
@@ -232,31 +277,30 @@ header p {
 }
 
 .history {
-    padding: 214px 16.5% 197px;
+    padding-top: 214px;
+    padding-bottom: 197px;
     font-size: 2.15em;
-    text-align: left;
 }
 
 .production {
-    padding: 122px 6% 122px;
+    padding-top: 122px;
+    padding-bottom: 122px;
     
 }
 
 .production .container {
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 .production p {
-    text-align: left;
     max-width: 500px;
 }
 
 .production img {
     width: 608px;
     height: 608px;
-    margin-right: 11%;
+    margin-right: 136px;
 }
 
 .production-title {
@@ -270,5 +314,9 @@ header p {
     font-size: 1.2em;
 }
 
+.logo img {
+    width: 240px;
+    height: 28px;
+}
 
 }
