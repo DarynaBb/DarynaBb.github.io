@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -111,7 +111,7 @@ header a {
 
 .logo a:hover path {
     stroke: #FF4300;
-    
+
 }
 
 .logo a:hover {
@@ -119,14 +119,14 @@ header a {
 }
 
 .logo span {
-    
+
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
     padding-left: 10px;
-    
+
 }
 
 .nav {
@@ -155,11 +155,11 @@ header a {
 
 .navigation a:hover {
     color: #FF4300;
-} 
+}
 
 /* .button {
     margin-left: auto;
-    
+
 } */
 
 .btn {
@@ -214,7 +214,7 @@ hgroup+a {
     display: flex;
     align-items: center;;
     margin-top: 80px;
-    
+
 }
 
 .details a {
@@ -223,7 +223,7 @@ hgroup+a {
     line-height: 28px;
     color:rgba( 255, 255, 255, 0.4 );
     text-transform: uppercase;
-    padding-left: 16px; 
+    padding-left: 16px;
 }
 
 .main-image {
@@ -282,7 +282,7 @@ hgroup+a {
     font-size: 56px;
     font-weight: 300;
     line-height: 80px;
-    
+
 }
 
 .aside-content p+p {
@@ -324,7 +324,7 @@ h3 {
     font-size: 64px;
     font-weight: 500;
     line-height: 58px;
-    
+
 }
 
 .article-content p {
@@ -336,7 +336,7 @@ h3 {
 
 .article-content p:last-child {
     margin-bottom: 0;
-}    
+}
 
 /***************************** BENEFITS ***************************/
 
@@ -354,7 +354,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 8px;
-    
+
 }
 
 .benefits li {
@@ -420,7 +420,7 @@ h3 {
     bottom: -16px;
     left: 20px;
     right: 20px;
-    
+
 }
 
 .strategies hgroup {
@@ -453,7 +453,7 @@ h4 {
 
 .strategies-cards {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .strategies-card {
@@ -490,13 +490,14 @@ h5 {
 
 .strategies-items li {
     display: flex;
+		align-items: flex-start;
 }
 
 
 .item-text {
     font-size: 14px;
     font-weight: 400;
-    line-height: 22px;  
+    line-height: 22px;
 }
 
 .item-name {
@@ -505,7 +506,7 @@ h5 {
 }
 
 .strategies-items li {
-    margin-bottom: 44px; 
+    margin-bottom: 44px;
 }
 
 .strategies-items li:last-child {
@@ -527,8 +528,8 @@ h5 {
     color: #0A4174;
     border-radius: 50%;
     padding: 8px 9px 7px;
-    
-} 
+
+}
 
 /***************************** STAGES ***************************/
 
@@ -553,6 +554,7 @@ h5 {
     flex: 0 0 50%;
     margin-bottom: 80px;
     display: flex;
+		align-items: flex-start;
 }
 
 .stages-list li:nth-child(5), .stages-list li:nth-child(6) {
@@ -599,7 +601,7 @@ footer {
 
 .wrapper-contacts {
     padding: 120px 0 40px 100px;
-    
+
 }
 
 .contacts-content {
@@ -670,7 +672,7 @@ input {
 
 input:focus {
     outline: none;
-} 
+}
 
 .subscribe button {
     background-color: #FF4300;
@@ -699,5 +701,3 @@ footer {
     background-color: #CFDCE8;
     opacity: 0.4;
 }
-
-
