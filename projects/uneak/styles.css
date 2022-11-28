@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -53,7 +53,7 @@ table {
 
 img,
 svg {
-  max-width: 100%;  
+  max-width: 100%;
 }
 
 
@@ -100,11 +100,11 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
 
-} 
+}
 
 .title {
     background: url(images/bg-1.png);
-    padding-top: 53px; 
+    padding-top: 53px;
     padding-bottom: 53px;
     background-size: cover;
 }
@@ -121,7 +121,7 @@ nav {
     font-size: 1.625em;
     line-height: 1.4;
     letter-spacing: 3%;
-    
+
 }
 
 .title .full-text {
@@ -163,13 +163,19 @@ nav {
     background-size: cover;
 }
 
+.history-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .history p {
     font-size: 1.5em;
     line-height: 1.5;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4%;
-    
+
 }
 
 .production {
@@ -194,7 +200,7 @@ nav {
 
 @media (min-width:1280px) {
 
- 
+
 
 .header-container {
     padding-top: 50px;
@@ -264,7 +270,7 @@ header p {
 
 .about-container, .production-container {
     flex-direction: row;
-    
+
 }
 
 .about img {
@@ -285,7 +291,7 @@ header p {
 .production {
     padding-top: 122px;
     padding-bottom: 122px;
-    
+
 }
 
 .production .container {
