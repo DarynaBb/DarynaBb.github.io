@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    padding-left: 14%;
+    padding-top: 150px;
+    padding-bottom: 50%;
+    padding-right: 2%;
+}
+
+header {
+    background-image: url(images/bg-picture-1440.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    max-height: 575px;
+}
+
+h2 {
+    font-size: 1em; 
+    font-weight: 700;
+    margin-bottom: 2em;
+    
+}
+h3 {
+    font-size: 2.375em;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+svg {
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.card-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    flex: 0 0 25%;
+    font-size: 0.75em;
+    text-transform: uppercase; 
+    position: relative;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    padding-right: 16px;
+    padding-left: 3%;
+    transition: all linear 300ms;
+    
+}
+
+.card-number {
+    font-weight: 300;
+    margin-bottom: 30px;
+    
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-transform: none;
+    max-width: 200px;
+    margin-top: 70px;
+}
+
+.card-item.active,
+.card-item:hover {
+    background-color: #0536FC;
+    color: #FFFFFF;
+}
+
+
+@media (max-width:768px) {
+    .header-container {
+        padding: 48px 24px;
+    }
+
+    h2 {
+        font-size: 0.75em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h3 br {
+        display: none;
+    }
+}
+
+@media (max-width:922px) {
+    .card-item {
+        flex-basis: 50%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width:480px) {
+    .card-item {
+        flex-basis: 100%;
+    }
+
+    .card-text {
+        margin-top: 24px;
+    }
+}
+
+/* @media (min-width: 1240px) {
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 2.375em;
+}
+
+.card-columns {
+
+}
+
+.card-item {
+    flex: 0 0 25%;
+    font-size: 1em;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.card-number {
+    margin-bottom: 30px;
+}
+
+.card-text {
+    max-width: 200px;
+    margin-top: 70px;
+    margin-bottom: 87px;
+}
+
+svg {
+    padding: 35px;
+}
+
+} */
