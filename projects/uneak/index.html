@@ -1,85 +1,134 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Tomorrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Tomorrow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
+  </head>
 
+  <body>
+    <header>
+      <div class="container header-container">
+        <p class="hide-desktop">menu</p>
+        <a href="#" class="logo">
+          <img src="images/logo uneak.png" width="140" height="14" />
+        </a>
+        <p class="hide-desktop">cart</p>
+        <nav class="hide-mobile">
+          <ul>
+            <li>
+              <button>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
+                    stroke="#353E50"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 15L21 21"
+                    stroke="#353E50"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">CART</a></li>
+            <li>
+              <button>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.942 5.62697H16.4197V4.41967C16.4197 1.98269 14.437 0 12 0C9.56301 0 7.58032 1.98269 7.58032 4.41967V5.62697H5.05802L3.35358 24H20.6465L18.942 5.62697ZM8.60159 4.41967C8.60159 2.54571 10.126 1.02127 12 1.02127C13.8741 1.02127 15.3984 2.54571 15.3984 4.41967V5.62697H8.60159V4.41967ZM5.98853 6.64824H7.58027V9.64771H6.99683V10.669H9.18494V9.64771H8.60154V6.64824H15.3984V9.64771H14.8149V10.669H17.0032V9.64771H16.4197V6.64824H18.0115L19.5264 22.9787H4.47359L5.98853 6.64824Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-        <header>
-            <div class="container header-container">
-                <p>menu</p>
-                <a href="#" class="logo">
-                    <img src="images/logo uneak.png" width="140" height="14" />
-                </a>
-                </h1>
-                <p>cart</p>
-                <nav>
-                    <ul>
-                        <li>
-                            <button>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#353E50" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15 15L21 21" stroke="#353E50" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            </li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SHOP</a></li>    
-                        <li><a href="#">CART</a></li>  
-                        <li>
-                            <button>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.942 5.62697H16.4197V4.41967C16.4197 1.98269 14.437 0 12 0C9.56301 0 7.58032 1.98269 7.58032 4.41967V5.62697H5.05802L3.35358 24H20.6465L18.942 5.62697ZM8.60159 4.41967C8.60159 2.54571 10.126 1.02127 12 1.02127C13.8741 1.02127 15.3984 2.54571 15.3984 4.41967V5.62697H8.60159V4.41967ZM5.98853 6.64824H7.58027V9.64771H6.99683V10.669H9.18494V9.64771H8.60154V6.64824H15.3984V9.64771H14.8149V10.669H17.0032V9.64771H16.4197V6.64824H18.0115L19.5264 22.9787H4.47359L5.98853 6.64824Z" fill="black"/>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <section class="title">
+      <div class="container title-container">
+        <h1 class="full-text">
+          Sneakers which will change your next step
+          <span class="hide-mobile"
+            >making it more sustainable, animal friendly, conscious</span
+          >
+        </h1>
 
-        <section class="title">
-            <div class="container title-container">
-                <p class="full-text">Sneakers which will change your next step making it more sustainable, animal friendly, conscious</p>
-                <p>Sneakers which will change your next step</p>
-                <img src="images/sneakers-green.png" width="280" height="186" />
-                <p>making it more sustainable, animal friendly, conscious</p>
-            </div>
-        </section>
+        <figure>
+          <img src="images/sneakers-green.png" width="533" height="355" />
+        </figure>
+        <div class="hide-desktop">
+          <p>making it more sustainable, animal friendly, conscious</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="about">
-            <div class="container about-container">
-                <img src="images/sneakers-pair.jpg" width="280" height="280" />
-                <p>We realize quite well that shoes are one of the most consumed products within the industry of fashion, which means volumes can be important, which is a big social responsibility.</p>
-            </div>
-        </section>
+    <section class="about">
+      <div class="container about-container">
+        <figure>
+            <img src="images/sneakers-pair.jpg" width="732" height="732" />
+        </figure>
+            <p>
+          We realize quite well that shoes are one of the most consumed products
+          within the industry of fashion, which means volumes can be important,
+          which is a big social responsibility.
+        </p>
+      </div>
+    </section>
 
-        <section class="history">
-            <div class="container history-container">
-                <p>Juarez is the name of the first sustainable sneaker shoes model from UNEAK, a new italian sustainable fashion brand, born from the ideas of Sonia and Davide. </p>
-            </div>
-        </section>
+    <section class="history">
+      <div class="container history-container">
+        <p>
+          Juarez is the name of the first sustainable sneaker shoes model from
+          UNEAK, a new italian sustainable fashion brand, born from the ideas of
+          Sonia and Davide.
+        </p>
+      </div>
+    </section>
 
-        <section class="production">
-            <div class="container production-container">
-                <img src="images/sneakers-white.jpg" width="280" height="281" />
-                <div>
-                    <p class="production-title">The Juarez sneaker model features certified sustainable materials</p>
-                    <p>It’s produced completely in Italy, in a warm region where all workers live very close to the production site.</p>
-                </div>
-            </div>
-        </section>
-
-
-
-
-    
-</body>
+    <section class="production">
+      <div class="container production-container">
+        <figure>
+            <img src="images/sneakers-white.jpg" width="608" height="608" />
+        </figure>
+        <div>
+          <p class="production-title">
+            The Juarez sneaker model features certified sustainable materials
+          </p>
+          <p>
+            It’s produced completely in Italy, in a warm region where all
+            workers live very close to the production site.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
