@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggLight.woff2") format("woff2"),
+    url("fonts/OggLight.woff") format("woff"),
+    url("fonts/OggLight.otf") format("otf");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggLightItalic.woff2") format("woff2"),
+    url("fonts/OggLightItalic.woff") format("woff"),
+    url("fonts/OggLightItalic.otf") format("otf");
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggMediumItalic.woff2") format("woff2"),
+    url("fonts/OggMediumItalic.woff") format("woff"),
+    url("fonts/OggMediumItalic.otf") format("otf");
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TradeGothic LT";
+  src: url("fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2"),
+    url("fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff"),
+    url("fonts/Trade\ Gothic\ LT\ Extended.otf") format("otf");
+  font-display: swap;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Ogg";
+  font-size: 16px;
+  line-height: 1;
+  min-width: 320px;
+  font-weight: 400;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 796px;
+}
+
+.header-contact {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  margin-bottom: 100px;
+}
+
+h1 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 109px;
+}
+
+.header-title {
+  font-family: "TradeGothic LT";
+  line-height: 1.75;
+  font-weight: 400;
+  opacity: 0.55;
+}
+
+.header-title-primary {
+  font-family: "Ogg";
+  font-size: 60px;
+  font-weight: 400;
+}
+
+em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.title-contact {
+  font-family: "TradeGothic LT";
+  color: #71870e;
+  padding-right: 35px;
+  padding-left: 342px;
+  line-height: 1.75;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+form {
+  margin-left: 191px;
+  max-width: 605px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  font-family: "TradeGothic LT";
+  display: block;
+  padding-bottom: 5px;
+  width: 100%;
+  
+}
+
+.form-email,
+.form-name,
+.form-message,
+.project-type-container {
+    margin-bottom: 50px;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+}
+
+input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  outline: none;
+}
+
+.checkbox-container {
+  margin-bottom: 44px;
+}
+
+.checkbox-container label {
+  display: inline;
+  font-weight: 300;
+}
+
+.form-end {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 151px;
+}
+
+.checkbox-container input {
+  display: inline;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.project-type {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  color: #c4c4c4;
+  font-family: "TradeGothic LT";
+  font-weight: 400;
+  appearance: none;
+  background-color: transparent;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+select:focus {
+  outline: none;
+}
+
+select {
+  appearance: none;
+  background-image: url(images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: calc(100% - 10px);
+}
+
+.btn {
+  font-family: "TradeGothic LT";
+  color: #d0a049;
+  border: none;
+  background: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  .title-contact {
+    padding-left: 0;
+  }
+}

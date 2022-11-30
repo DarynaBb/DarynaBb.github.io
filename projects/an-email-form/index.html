@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header class="header-contact">
+                <hgroup>
+                    <h1><span class="header-title hide-mobile">(Booking)</span>
+                        <span class="header-title-primary">Send <em>an email</em></span></h1>
+                    <p class="title-contact">If you have a general or project enquiry, please 
+                        drop me an email — available now</p>
+                </hgroup>
+            </header>
+            <form action="result.html" method="POST">
+                <div class="form-email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email" required/>
+                </div>
+                <div class="form-name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required/>
+                </div>
+                <div class="form-message">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="Start typing here" required/>
+                </div>
+                <div class="project-type-container">
+                    <label>Project type</label>
+                    <select class="project-type" name="Project type" placeholder="Choose">
+                        <option value="1">Reserve for personal event</option>
+                        <option value="2">Buy tickets for a next concert</option>
+                        <option value="3">Reserve from a venue</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+                <div class="checkbox-container">
+                    <input class="checkbox-input" type="checkbox" id="agreement"/>
+                    <label class="checkbox" for="agreement">I agree to receive ocasional newsletter with latest news and updates</label>
+                  </div>
+                  <div>
+                <div class="form-end">
+                    <img src="images/line.png" alt="" />
+                    <button class="btn">Send</button>
+                </div>    
+            </form>
+        </div>
+    </section>
+</body>
+</html>
