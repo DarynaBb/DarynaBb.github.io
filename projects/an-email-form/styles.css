@@ -343,4 +343,9 @@ select {
   .title-contact {
     padding-left: 0;
   }
+
+  .form-end {
+    justify-content: center;
+    margin-left: 0;
+  }
 }
