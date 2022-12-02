@@ -1,37 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <section>
-        <div class="container">
+        <div class="container section-container">
             <div class="section-content">
                 <div class="title">
                     <p>(Philosophy)</p>
-                    <h1>Convergence of <span class="green">Zen meditation</span>, <strong><em>nature</em></strong> & creativity</h1>
+                    <h1 class="serif">Convergence of <span class="green">Zen meditation</span>, <strong><em>nature</em></strong> & creativity</h1>
                 </div>
                 <div class="section-text">
                     <p>The majesty of the natural world has always been integral to Sebastian Mullaert’s music.</p>
                     <p>His approach to art, as well as to life, is centered around meditating on nature’s primordial cycles and forces.</p>
                 </div>
                 <div class="section-content-end"> 
-                    <img src="images/line.png" alt="" />
+                    <svg width="84" height="3" viewBox="0 0 84 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.672 0.903998C22.704 0.903998 5.52 0.615999 0.72 0.328C0.144 0.808 0.0480001 2.248 0.816 2.632C5.904 2.248 21.84 1.96 42.48 1.96C63.12 1.96 77.904 2.248 83.184 2.632C83.76 2.248 83.856 0.808 83.088 0.328C78.48 0.615999 62.64 0.903998 42.672 0.903998Z" fill="#D0A049"/>
+                        </svg>                        
                     <span>Read more</span>
                 </div>
+            </div>   
+            <div class="section-images">
+                <picture class="big">
+                    <source srcset="images/photo1.avif" type="image/avif" />
+                    <source srcset="images/photo1.webp" type="image/webp" />
+                    <img class="picture-big" src="images/photo1.jpg" width="464" height="634" alt="" />
+                </picture>
+                <picture class="small">
+                    <source srcset="images/photo2.avif" type="image/avif" />
+                    <source srcset="images/photo2.webp" type="image/webp" />
+                    <img class="picture-small" src="images/photo2.jpg" width="260" height="326" alt="" />
+                    <p class="caption">Based on nature breath</p>
+                </picture>
             </div>
         </div>    
-        <div class="section-images">
-            <figure>
-                <img src="images/photo1.jpg" width="464" height="634" alt="" />
-                <img src="images/photo2.jpg" width="260" height="326" alt="" />
-                <figcaption>Based on nature breath</figcaption>
-            </figure>
-        </div>
-        
     </section>
 </body>
 </html>
