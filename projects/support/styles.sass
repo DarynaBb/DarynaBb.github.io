@@ -1,0 +1,77 @@
+$font-stack: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif
+$primary-color: #0536FC
+$secondary-color: rgba(0, 0, 0, .35) 
+
+
+body 
+    font-family: $font-stack
+    font-size: 16px
+    font-weight: 400
+    line-height: 1
+
+.container 
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    max-width: 1056px
+
+   
+.hgroup
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 70px
+
+    .hgroup-title 
+        line-height: 1.5
+        color: $primary-color
+        opacity: 0.9
+        margin-bottom: 30px
+
+    .hgroup-subtitle 
+        font-size: 36px
+        line-height: 1.1
+        max-width: 482px
+
+.support-main  
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap    
+
+    .support-title-text
+        line-height: 1.1
+        color: $secondary-color    
+
+    .accordion 
+        max-width: 456px
+        padding-top: 30px   
+
+        .accordion-list-item
+            border-top: 1px solid rgba(0, 0, 0, .15)
+            padding-top: 30px 
+            padding-bottom: 70px
+            font-weight: 700
+            line-height: 1.5
+            text-transform: uppercase
+    
+            .list-item-container 
+                display: flex 
+                align-items: center
+                justify-content: space-between  
+
+            .list-item-title
+                // margin-bottom: 70px
+                display: inline-flex
+                max-width: 365px
+
+            .list-item-text
+                font-weight: 400
+                text-transform: none
+                margin-top: 70px
+
+@media (max-width: 768px) 
+                    
+    .support-main .accordion .accordion-list-item .list-item-title 
+            max-width: 300px
+
+
+
