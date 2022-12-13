@@ -1,0 +1,273 @@
+body {
+  font-family: "Basis Grotesque Pro", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 1186px;
+}
+
+.hgroup {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 74px;
+}
+
+.hgroup-title {
+  color: #0536fc;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hgroup-subtitle {
+  font-size: 38px;
+  line-height: 1.1;
+}
+.payment {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.payment-title {
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.payment-method-group {
+  margin-bottom: 48px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.group-input {
+  opacity: 0;
+  position: absolute;
+}
+
+.group-label::before {
+  content: "";
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -0.2em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 500ms ease;
+}
+
+.group-input:checked + .group-label::before {
+  background-color: #0536fc;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.group-input:focus + .group-label::before {
+  outline: none;
+  border: 1px solid #f4f4f4;
+}
+
+.payment-amount-group {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 22px;
+}
+
+.amount-group-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.amount-group-grid-other {
+  display: grid;
+  grid-column: 1fr;
+}
+
+.payment-method-input {
+}
+
+.payment-amount-input {
+  display: none;
+}
+.payment-amount-label {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  line-height: 1.5;
+}
+
+.amount-label-last {
+  border-right: 0;
+}
+
+.amount-input-other {
+  display: flex;
+  justify-content: flex-start;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 13px 0 13px 35px;
+  color: rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+.amount-input-other::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.amount-label-other {
+  display: none;
+}
+
+.payment-amount-input:checked + .payment-amount-label {
+  background-color: #0536fc;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.payment-frequency-group {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.payment-text-input {
+  display: block;
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+.payment-text-input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.payment-text-input[placeholder] {
+  width: 100%;
+}
+
+.payment-text-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.payment-text-form {
+  margin-bottom: 30px;
+  max-width: 478px;
+}
+
+.payment-agreement {
+  margin-bottom: 48px;
+}
+
+.agreement-link {
+  color: #0536fc;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.agreement-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .agreement-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  } 
+
+  .agreement-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .agreement-label:hover .agreement-input ~ .agreement-checkmark {
+    background-color: #f4f4f4;
+  }
+
+  .agreement-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .agreement-label input:checked ~ .agreement-checkmark:after {
+    display: block;
+  }
+
+ .agreement-label .agreement-checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 7px;
+    height: 10px;
+    border: solid #0536fc;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .btn {
+    display: inline-flex;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    background-color: #0536FC;
+    box-shadow: none;
+    border: 1px solid transparent;
+    padding: 15px 60px;
+    
+  }
+
+  .btn:hover {
+    background-color: #fff;
+    color: #0536FC;
+    border: 1px solid #0536FC;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+
+@media (max-width: 767px)  {
+    .hgroup {
+        margin-bottom: 30px;
+    }
+    .payment-title {
+        margin-bottom: 30px;
+    }
+}

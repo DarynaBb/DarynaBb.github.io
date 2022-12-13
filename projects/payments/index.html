@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="investment">
+      <div class="container investment-container">
+        <div class="investment-title">
+          <hgroup class="hgroup investment-hgroup">
+            <h2 class="hgroup-title">інвестиції</h2>
+            <p class="hgroup-subtitle">
+              зробити<br />
+              — інвестиції у програму
+            </p>
+          </hgroup>
+        </div>
+        <div class="payment">
+          <h3 class="payment-title">виберіть спосіб оплати</h3>
+          <div class="payment-column">
+            <div class="payment-item">
+              <form>
+                <fieldset class="payment-method-group" id="payment-method">
+                  <div>
+                    <input
+                      class="group-input payment-method-input"
+                      type="radio"
+                      id="card"
+                      value="Банківська карта"
+                      name="payment-method"
+                    />
+                    <label class="group-label payment-method-label" for="card"
+                      >Банківська карта</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="group-input payment-method-input"
+                      type="radio"
+                      id="paypal"
+                      value="PayPal"
+                      name="payment-method"
+                    />
+                    <label class="group-label payment-method-label" for="paypal"
+                      >PayPal</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="group-input payment-method-input"
+                      type="radio"
+                      id="payment-slip"
+                      value="payment-slip"
+                      name="payment-method"
+                    />
+                    <label
+                      class="group-label payment-method-label"
+                      for="payment-slip"
+                      >Банківська платіжна квитанція</label
+                    >
+                  </div>
+                </fieldset>
+                <h3 class="payment-title">банківська карта</h3>
+                <fieldset class="payment-amount-group" id="payment-amount">
+                  <div class="amount-group-grid">
+                    <div>
+                      <input
+                        class="payment-amount-input"
+                        id="50000"
+                        type="radio"
+                        value="value1"
+                        name="payment-amount"
+                      />
+                      <label class="payment-amount-label" for="50000"
+                        >50 000</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="payment-amount-input"
+                        id="30000"
+                        type="radio"
+                        value="value2"
+                        name="payment-amount"
+                      />
+                      <label class="payment-amount-label" for="30000"
+                        >30 000</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="payment-amount-input"
+                        id="10000"
+                        type="radio"
+                        value="value3"
+                        name="payment-amount"
+                      />
+                      <label class="payment-amount-label" for="10000"
+                        >10 000</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="payment-amount-input"
+                        id="1000"
+                        type="radio"
+                        value="value4"
+                        name="payment-amount"
+                      />
+                      <label
+                        class="payment-amount-label amount-label-last"
+                        for="1000"
+                        >1 000</label
+                      >
+                    </div>
+                  </div>
+                  <div class="amount-group-grid-other">
+                    <input
+                      class="payment-amount-input amount-input-other"
+                      id="other"
+                      type="number"
+                      min="10"
+                      name="payment-amount"
+                      placeholder="Інша сума"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset
+                  class="payment-frequency-group"
+                  id="payment-frequency"
+                >
+                  <div>
+                    <input
+                      class="group-input"
+                      id="monthly"
+                      type="radio"
+                      name="payment-frequency"
+                    />
+                    <label class="group-label" for="monthly">Щомісячно</label>
+                  </div>
+                  <div>
+                    <input
+                      class="group-input"
+                      id="one-time"
+                      type="radio"
+                      name="payment-frequency"
+                    />
+                    <label class="group-label" for="one-time"
+                      >Одноразово
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="payment-text-form">
+                  <div>
+                    <label class="payment-text-label" for="name"
+                      >ім’я
+                      <input
+                        class="payment-text-input"
+                        id="name"
+                        type="text"
+                        placeholder="Напишіть ваше ім’я"
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <label class="payment-text-label" for="email"
+                      >Email
+                      <input
+                        class="payment-text-input"
+                        id="email"
+                        type="email"
+                        placeholder="Напишіть вашу електронну адресу"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="payment-agreement">
+                  <label class="agreement-label" for="offer"
+                    >Я приймаю
+                    <a class="agreement-link" href="#">Договір оферти</a>
+                    <input class="agreement-input" id="offer" type="checkbox" />
+                    <span class="agreement-checkmark"></span>
+                  </label>
+                  <label class="agreement-label" for="personal-data"
+                    >Я приймаю
+                    <a class="agreement-link" href="#"
+                      >Угоду про використання персональних даних</a
+                    >
+                    <input
+                      class="agreement-input"
+                      id="personal-data"
+                      type="checkbox"
+                    />
+                    <span class="agreement-checkmark"></span>
+                  </label>
+                </div>
+                <button class="btn">відправити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
