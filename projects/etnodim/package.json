@@ -7,7 +7,7 @@
   "license": "ISC",
 
 "scripts": {
-  "build:css": "npx tailwindcss -i ./styles.css -o ./dist/output1.css",
+  "build:css": "npx tailwindcss -i ./styles.css -o ./dist/output.css",
   "watch:css": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch"
 },
 

@@ -1,0 +1,119 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.background-c-red {
+background-color: #DA1F39;
+}
+
+
+
+/* img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    min-width: 320px;
+  }
+  
+  .cart-number {
+    background-color: #DA1F39;
+    font-family: "Roboto";
+    font-size: 8px;
+    padding-top: 2px;
+    bottom: 0;
+    right: 0;
+  }
+
+  h1 {
+    font-family: "DelaGothic";
+    font-size: 18px;
+  }
+
+  .catalogue-footer {
+    background-color: #F4F4F4;
+  }
+  
+  .active-red {
+    color: #DA1F39;
+    font-weight: 700;
+  }
+  
+  .burger-title {
+    font-family: "DelaGothic";
+    color: #DA1F39;
+  }
+  
+  .dela-gothic {
+    font-family: "DelaGothic";
+  }
+  
+  .c-grey {
+    color: #9A9A9A;
+  }
+
+  .logo-header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-red:hover {
+    color: #DA1F39;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .hover-svg-red:hover svg path {
+    fill:#DA1F39;
+    stroke:#DA1F39; 
+  }
+  
+  .hover-svg-red:hover svg rect {
+    fill:#DA1F39;
+  }
+
+  .burger-m {
+    display: none;
+  }
+  
+  .input-burger:checked ~ .burger-m {
+    display: block;
+  } 
+  
+  .input-burger:checked ~ label svg {
+    display: none;
+  }
+  
+  .input-burger:checked ~ .burger-m {
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: 6px 6px 8px 0px #B2B2B240;
+    ;
+  } 
+
+  @media (max-width: 768px) {
+    .logo {
+      width: 95px;
+    }
+  
+    .logo-footer img {
+      width: 132px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cart-number {
+      bottom: 0px;
+      right: -2px;
+    }
+  }   */
+

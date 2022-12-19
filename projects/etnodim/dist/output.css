@@ -1039,6 +1039,10 @@ h1 {
   box-shadow: 6px 6px 8px 0px #B2B2B240;
 }
 
+.txt-col-red {
+  color:#DA1F39;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 95px;
@@ -1051,8 +1055,8 @@ h1 {
 
 @media (min-width: 768px) {
   .cart-number {
-    bottom: 3px;
-    right: -3px;
+    bottom: -0px;
+    right: -2px;
   }
 
   .md\:h-3 {
