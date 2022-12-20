@@ -3,10 +3,14 @@
 @import "tailwindcss/utilities";
 
 .background-c-red {
-background-color: #DA1F39;
+  background-color: #da1f39;
 }
 
-
+.btn-hover:hover {
+  background-color: #fff;
+  border: 1px solid #da1f39;
+  color: #da1f39;
+}
 
 /* img {
     max-width: 100%;
@@ -116,4 +120,3 @@ background-color: #DA1F39;
       right: -2px;
     }
   }   */
-

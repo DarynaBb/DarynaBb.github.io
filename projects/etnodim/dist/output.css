@@ -681,6 +681,10 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -866,7 +870,7 @@ body {
 }
 
 .cart-number {
-  background-color: #DA1F39;
+  background-color: #da1f39;
   font-family: "Roboto";
   font-size: 8px;
   padding-top: 2px;
@@ -889,23 +893,22 @@ h1 {
   margin-top: 5px;
 }
 
-.unit-price {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.catalogue-footer {
-  background-color: #F4F4F4;
+.bg-footer {
+  background-color: #f4f4f4;
 }
 
 .active-red {
-  color: #DA1F39;
+  color: #da1f39;
   font-weight: 700;
 }
 
 .burger-title {
   font-family: "DelaGothic";
-  color: #DA1F39;
+  color: #da1f39;
+}
+
+.txt-c-red {
+  color: #da1f39;
 }
 
 .dela-gothic {
@@ -913,7 +916,7 @@ h1 {
 }
 
 .c-grey {
-  color: #9A9A9A;
+  color: #9a9a9a;
 }
 
 .catalogue-scroll {
@@ -921,7 +924,7 @@ h1 {
   margin-top: 90px;
 }
 
-.catalogue-filter-checkbox {
+.c-filter-grey {
   color: #565656;
 }
 
@@ -932,18 +935,18 @@ h1 {
 }
 
 .hover-red:hover {
-  color: #DA1F39;
+  color: #da1f39;
   font-weight: 700;
   cursor: pointer;
 }
 
 .hover-svg-red:hover svg path {
-  fill:#DA1F39;
-  stroke:#DA1F39;
+  fill: #da1f39;
+  stroke: #da1f39;
 }
 
 .hover-svg-red:hover svg rect {
-  fill:#DA1F39;
+  fill: #da1f39;
 }
 
 .filter-icons svg:hover rect {
@@ -960,7 +963,7 @@ h1 {
 }
 
 .filter-label {
-  margin-left: -18px;
+  margin-left: -13px;
 }
 
 .line-clamp {
@@ -1032,15 +1035,15 @@ h1 {
 .input-burger:checked ~ .burger-m {
   display: block;
   position: absolute;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   z-index: 3;
   background-color: #fff;
-  box-shadow: 6px 6px 8px 0px #B2B2B240;
+  box-shadow: 6px 6px 8px 0px #b2b2b240;
 }
 
 .txt-col-red {
-  color:#DA1F39;
+  color: #da1f39;
 }
 
 @media (max-width: 768px) {
@@ -1312,6 +1315,10 @@ h1 {
     display: flex;
   }
 
+  .min-\[998px\]\:grid {
+    display: grid;
+  }
+
   .min-\[998px\]\:hidden {
     display: none;
   }
@@ -1368,10 +1375,6 @@ h1 {
     margin-bottom: 3rem;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .min-\[1024px\]\:p-20 {
     padding: 5rem;
   }
@@ -1384,4 +1387,5 @@ h1 {
     padding-top: 0px;
   }
 }
+
 /*# sourceMappingURL=output.css.map */
