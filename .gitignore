@@ -1,2 +1,3 @@
 .DS_Store
 courses/
+**/node_modules
