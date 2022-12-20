@@ -13,16 +13,18 @@
     <section class="investment">
       <div class="container investment-container">
         <div class="investment-title">
-          <hgroup class="hgroup investment-hgroup">
-            <h2 class="hgroup-title">інвестиції</h2>
-            <p class="hgroup-subtitle">
+          <header class="header investment-hgroup">
+            <h2 class="header-title">інвестиції</h2>
+            <p class="header-subtitle">
               зробити<br />
               — інвестиції у програму
             </p>
-          </hgroup>
+          </header>
         </div>
         <div class="payment">
-          <h3 class="payment-title">виберіть спосіб оплати</h3>
+          <div class="payment-text-column">
+            <h3 class="payment-title">виберіть спосіб оплати</h3>
+          </div>
           <div class="payment-column">
             <div class="payment-item">
               <form>
@@ -66,7 +68,7 @@
                     >
                   </div>
                 </fieldset>
-                <h3 class="payment-title">банківська карта</h3>
+                <h3 class="payment-title mb-30">банківська карта</h3>
                 <fieldset class="payment-amount-group" id="payment-amount">
                   <div class="amount-group-grid">
                     <div>
@@ -157,8 +159,8 @@
                   </div>
                 </fieldset>
                 <div class="payment-text-form">
-                  <div>
-                    <label class="payment-text-label" for="name"
+                  <div class="mb-30">
+                    <label class="payment-text-label mb-20" for="name"
                       >ім’я
                       <input
                         class="payment-text-input"
@@ -168,8 +170,8 @@
                       />
                     </label>
                   </div>
-                  <div>
-                    <label class="payment-text-label" for="email"
+                  <div class="mb-30">
+                    <label class="payment-text-label mb-20" for="email"
                       >Email
                       <input
                         class="payment-text-input"
@@ -181,26 +183,32 @@
                   </div>
                 </div>
                 <div class="payment-agreement">
-                  <label class="agreement-label" for="offer"
-                    >Я приймаю
-                    <a class="agreement-link" href="#">Договір оферти</a>
-                    <input class="agreement-input" id="offer" type="checkbox" />
-                    <span class="agreement-checkmark"></span>
-                  </label>
-                  <label class="agreement-label" for="personal-data"
-                    >Я приймаю
-                    <a class="agreement-link" href="#"
-                      >Угоду про використання персональних даних</a
-                    >
-                    <input
-                      class="agreement-input"
-                      id="personal-data"
-                      type="checkbox"
-                    />
-                    <span class="agreement-checkmark"></span>
-                  </label>
+                  <div>
+                    <label class="agreement-label" for="offer"
+                      >Я приймаю
+                      <a class="agreement-link" href="#">Договір оферти</a>
+                      <input class="agreement-input" id="offer" type="checkbox" />
+                      <span class="agreement-checkmark"></span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="agreement-label" for="personal-data"
+                      >Я приймаю
+                      <a class="agreement-link" href="#"
+                        >Угоду про використання персональних даних</a
+                      >
+                      <input
+                        class="agreement-input"
+                        id="personal-data"
+                        type="checkbox"
+                      />
+                      <span class="agreement-checkmark"></span>
+                    </label>
+                  </div>
                 </div>
-                <button class="btn">відправити</button>
+                <div>  
+                  <button class="btn">відправити</button>
+                </div>
               </form>
             </div>
           </div>
