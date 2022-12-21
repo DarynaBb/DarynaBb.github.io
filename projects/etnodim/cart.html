@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fonts.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="dist/output1.css" />
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div
-      class="container-catalogue ml-auto mr-auto p-2.5 max-w-7xl box-content min-[1024px]:p-20 pb-12"
+      class="container-catalogue ml-auto mr-auto p-2.5 max-w-7xl box-content min-[1024px]:p-6 pb-12"
     >
       <header
         class="flex justify-between items-center mb-5 relative min-[998px]:mb-9"
@@ -75,7 +73,7 @@
                   </label>
                   <div>
                     <img
-                      src="images/etnodim-logo.png"
+                      src="src/images/etnodim-logo.png"
                       width="95"
                       height="25"
                       alt=""
@@ -189,66 +187,51 @@
           </div>
         </nav>
 
-        <div class="logo logo-header absolute">
-          <img src="images/etnodim-logo.png" width="184" height="48" alt="" />
+        <div class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img src="src/images/etnodim-logo.png" width="184" height="48" alt="" />
         </div>
         <nav>
           <ul class="flex gap-4">
             <li class="hidden min-[998px]:flex items-center gap-1.5">
-              <span>UA</span>
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1 1L5 5L9 1" stroke="black" />
-              </svg>
+              <label>
+              <select name="currency" class="cursor-pointer outline-none">
+                <option value="ru">UA</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </label>
             </li>
             <li class="hidden min-[998px]:flex items-center gap-1.5">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.4633 12.0933H8.71667C9.34138 11.8094 10.0182 11.5958 10.717 11.3779C11.9814 10.984 13.2826 10.5757 14.3411 9.686H17.4633C17.7165 9.686 17.9216 9.48083 17.9216 9.22767C17.9216 8.97451 17.7165 8.76934 17.4633 8.76934H15.1646C15.7073 7.91932 15.8413 6.87679 15.5129 5.81273C15.0273 4.23936 13.6387 2.92416 12.1359 2.61442C10.7407 2.32653 9.18501 2.64092 7.97651 3.45482C6.91948 4.16667 6.21891 5.2015 6.00353 6.36917C5.9577 6.61803 6.12223 6.85723 6.37127 6.90306C6.61978 6.94746 6.85915 6.78454 6.90516 6.53532C7.07524 5.61221 7.6376 4.78828 8.48856 4.21537C9.49689 3.5361 10.7901 3.27184 11.9511 3.51247C13.141 3.75739 14.2457 4.81478 14.637 6.08307C14.8139 6.65599 14.9768 7.75492 14.0827 8.67874C14.0513 8.71124 14.0164 8.73809 13.9842 8.76934H4.53597C4.28281 8.76934 4.07764 8.97451 4.07764 9.22767C4.07764 9.48083 4.28281 9.686 4.53597 9.686H12.6532C11.9726 10.0218 11.222 10.2603 10.4444 10.5028C9.22975 10.8815 7.97969 11.2736 6.93998 12.0933H4.53597C4.28281 12.0933 4.07764 12.2985 4.07764 12.5517C4.07764 12.8048 4.28281 13.01 4.53597 13.01H6.07403C5.34472 14.1398 5.32463 15.7014 6.08481 17.0505C7.06862 18.7961 8.97912 19.4875 10.8125 19.4875C11.4498 19.4875 12.0779 19.4041 12.6544 19.2523C15.0692 18.616 16.5667 16.9248 16.5627 14.839C16.5624 14.5859 16.3572 14.3814 16.1044 14.3814C16.1041 14.3814 16.1037 14.3814 16.1037 14.3814C15.8505 14.3818 15.6457 14.5877 15.6461 14.8405C15.65 16.8124 13.9825 17.9543 12.4209 18.3657C10.4551 18.8831 7.92191 18.4434 6.88332 16.6007C6.3147 15.5913 6.16592 14.0624 7.1832 13.0913C7.21366 13.0622 7.24703 13.038 7.27811 13.01H17.4633C17.7165 13.01 17.9216 12.8048 17.9216 12.5517C17.9216 12.2985 17.7165 12.0933 17.4633 12.0933Z"
-                  fill="#1D1C1A"
-                />
-              </svg>
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1 1L5 5L9 1" stroke="black" />
-              </svg>
+              <label>
+                <select name="currency" class="cursor-pointer outline-none">
+                  <option value="hryvnya">₴</option>
+                  <option value="us-dollar">$</option>
+                  <option value="eur">€</option>
+                </select>
+              </label>
             </li>
             <li class="hidden min-[998px]:flex gap-2.5">
               <a href="tel:+380978889292">+38 097 888 92 92</a>
             </li>
             <li>
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z"
-                  fill="black"
-                />
-                <path
-                  d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z"
-                  fill="black"
-                />
-              </svg>
+              <button class="cursor-pointer">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
             </li>
             <li>
               <a href="cart.html">
@@ -277,103 +260,50 @@
       </header>
 
       <section class="mb-5">
-        <ul class="font-semibold flex gap-1 text-xs">
+        <ul class="font-semibold flex gap-1 text-xs breadcrumbs">
           <li class="hidden min-[998px]:flex items-center gap-1">
             <a href="">Головна</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
           </li>
           <li class="hidden min-[998px]:flex items-center gap-1">
             <a href="">Жінкам</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
           </li>
           <li class="hidden min-[998px]:flex items-center gap-1">
-            <a href="">Жіночі вишиванки</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
+            <a href="index.html">Жіночі вишиванки</a>
           </li>
           <li class="hidden min-[998px]:flex items-center gap-1">
-            <a href="">Вишиванка з рослинним орнаментом Lito</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
-          </li>
-          <li class="flex min-[998px]:hidden items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 9.83333H1M1 9.83333L5.87611 5M1 9.83333L5.87611 15"
-                stroke="#DA1F39"
-              />
-            </svg>
             <a href="">Вишиванка з рослинним орнаментом Lito</a>
           </li>
           <li class="hidden min-[998px]:block font-light">
             <a href="">Кошик</a>
           </li>
         </ul>
+        <div class="flex min-[998px]:hidden items-center gap-2.5 font-semibold text-xs">
+          <a href="index.html">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 5.83333L1 5.83333M1 5.83333L5.87611 1M1 5.83333L5.87611 11" stroke="#DA1F39"/>
+              </svg>              
+            </a>
+          <a href="index.html">Вишиванка з рослинним орнаментом Lito</a>
+        </div>
       </section>
       <section class="mb-12">
         <ul>
-          <li class="flex justify-between">
+          <li class="flex justify-between gap-4">
             <div class="flex justify-start gap-5 min-[998px]:basis-1/3">
-              <div>
+              <figure>
                 <picture>
-                  <source srcset="images/lito-cart.webp" type="image/webp" />
+                  <source srcset="src/images/lito-cart.webp" type="image/webp" />
                   <image
-                    src="images/lito-cart.jpg"
+                    src="src/images/lito-cart.jpg"
                     width="142"
                     height="171"
                     alt="image-order"
                   />
                 </picture>
-              </div>
+              </figure>
               <div class="font-semibold">
-                <div class="flex jusify-between gap-2.5">
+                <div class="flex justify-between items-start gap-10">
                   <p class="mb-5">Вишиванка з рослинним орнаментом Lito</p>
-                  <svg
-                    class="min-[998px]:hidden"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M1 1L17 17M17 1L1 17" stroke="#939694" />
-                  </svg>
                 </div>
                 <div>
                   <div class="text-xs mb-2.5">
@@ -396,39 +326,43 @@
                   class="flex justify-between items-center pr-3 min-[998px]:hidden"
                 >
                   <div class="flex items-center gap-2.5">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" fill="#F4F4F4" />
-                      <path
-                        d="M7.14258 14.2861H22.8569V15.7147H7.14258V14.2861Z"
-                        fill="black"
-                      />
-                    </svg>
+                    <button> 
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" fill="#F4F4F4" />
+                        <path
+                          d="M7.14258 14.2861H22.8569V15.7147H7.14258V14.2861Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button> 
                     <span class="text-sm font-light">1</span>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" fill="#F4F4F4" />
-                      <path
-                        d="M14.1522 7.14258H15.4915C15.6105 7.14258 15.6701 7.2021 15.6701 7.32115V23.0354C15.6701 23.1545 15.6105 23.214 15.4915 23.214H14.1522C14.0332 23.214 13.9736 23.1545 13.9736 23.0354V7.32115C13.9736 7.2021 14.0332 7.14258 14.1522 7.14258Z"
-                        fill="black"
-                      />
-                      <path
-                        d="M7.32115 14.3301H22.3211C22.4402 14.3301 22.4997 14.3896 22.4997 14.5086V15.8479C22.4997 15.967 22.4402 16.0265 22.3211 16.0265H7.32115C7.2021 16.0265 7.14258 15.967 7.14258 15.8479V14.5086C7.14258 14.3896 7.2021 14.3301 7.32115 14.3301Z"
-                        fill="black"
-                      />
-                    </svg>
+                    <button>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" fill="#F4F4F4" />
+                        <path
+                          d="M14.1522 7.14258H15.4915C15.6105 7.14258 15.6701 7.2021 15.6701 7.32115V23.0354C15.6701 23.1545 15.6105 23.214 15.4915 23.214H14.1522C14.0332 23.214 13.9736 23.1545 13.9736 23.0354V7.32115C13.9736 7.2021 14.0332 7.14258 14.1522 7.14258Z"
+                          fill="black"
+                        />
+                        <path
+                          d="M7.32115 14.3301H22.3211C22.4402 14.3301 22.4997 14.3896 22.4997 14.5086V15.8479C22.4997 15.967 22.4402 16.0265 22.3211 16.0265H7.32115C7.2021 16.0265 7.14258 15.967 7.14258 15.8479V14.5086C7.14258 14.3896 7.2021 14.3301 7.32115 14.3301Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button>  
                   </div>
-                  <span class="inline-block text-xs">2 800 грн.</span>
+                  <!-- <span class="inline-block text-xs">2 800 грн.</span> -->
                 </div>
               </div>
             </div>
@@ -442,34 +376,38 @@
               <div class="grow flex flex-col items-center gap-14">
                 <span class="block text-sm font-light">Кількість</span>
                 <div class="flex justify-between">
-                  <svg
-                    width="21"
-                    height="21"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="21" height="21" fill="#EFEFEF" />
-                    <path d="M5 10H16V11H5V10Z" fill="#939694" />
-                  </svg>
+                  <button class="cursor-pointer">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="21" height="21" fill="#EFEFEF" />
+                      <path d="M5 10H16V11H5V10Z" fill="#939694" />
+                    </svg>
+                  </button>
                   <span class="block text-xs font-semibold mx-2.5">1</span>
-                  <svg
-                    width="21"
-                    height="21"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="21" height="21" fill="#EFEFEF" />
-                    <path
-                      d="M9.90625 5H10.8438C10.9271 5 10.9688 5.04167 10.9688 5.125V16.125C10.9688 16.2083 10.9271 16.25 10.8438 16.25H9.90625C9.82292 16.25 9.78125 16.2083 9.78125 16.125V5.125C9.78125 5.04167 9.82292 5 9.90625 5Z"
-                      fill="#939694"
-                    />
-                    <path
-                      d="M5.125 10.0312H15.625C15.7083 10.0312 15.75 10.0729 15.75 10.1562V11.0937C15.75 11.1771 15.7083 11.2187 15.625 11.2187H5.125C5.04167 11.2187 5 11.1771 5 11.0937V10.1562C5 10.0729 5.04167 10.0312 5.125 10.0312Z"
-                      fill="#939694"
-                    />
-                  </svg>
+                  <button class="cursor-pointer">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="21" height="21" fill="#EFEFEF" />
+                      <path
+                        d="M9.90625 5H10.8438C10.9271 5 10.9688 5.04167 10.9688 5.125V16.125C10.9688 16.2083 10.9271 16.25 10.8438 16.25H9.90625C9.82292 16.25 9.78125 16.2083 9.78125 16.125V5.125C9.78125 5.04167 9.82292 5 9.90625 5Z"
+                        fill="#939694"
+                      />
+                      <path
+                        d="M5.125 10.0312H15.625C15.7083 10.0312 15.75 10.0729 15.75 10.1562V11.0937C15.75 11.1771 15.7083 11.2187 15.625 11.2187H5.125C5.04167 11.2187 5 11.1771 5 11.0937V10.1562C5 10.0729 5.04167 10.0312 5.125 10.0312Z"
+                        fill="#939694"
+                      />
+                    </svg>
+                    </button>
                 </div>
               </div>
               <div class="grow flex flex-col items-center gap-14">
@@ -479,25 +417,42 @@
                 >
               </div>
               <div class="grow flex flex-col items-end">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M1 1L17 17M17 1L1 17" stroke="#939694" />
-                </svg>
+                <button class="cursor-pointer">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M1 1L17 17M17 1L1 17" stroke="#939694" />
+                  </svg>
+                </button>
               </div>
+            </div>
+            <div class="min-[998px]:hidden flex flex-col justify-between items-end">
+            <button class="inline-flex items-start cursor-pointer min-[998px]:hidden">
+              <svg
+                class="min-[998px]:hidden"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L17 17M17 1L1 17" stroke="#939694" />
+              </svg>
+            </button>
+            <span class="inline-block text-xs font-bold">2 800 грн.</span>
             </div>
           </li>
         </ul>
       </section>
       <section class="min-[998px]:flex justify-between">
         <div
-          class="inline-flex basis-3/4 justify-start border-t border-black mb-7 pt-5 min-[998px]:basis-1/4"
+          class="inline-flex basis-3/4 justify-start border-t border-black mb-7 pt-5 min-[998px]:basis-1/4 w-4/5"
         >
-          <div class="flex justify-between gap-20">
+          <div class="flex justify-between gap-20 w-full">
             <span class="block font-bold"><strong>До сплати</strong></span>
             <span class="block font-bold txt-col-red"
               ><strong>2 800 грн.</strong></span
@@ -507,9 +462,9 @@
         <div
           class="min-[998px]:flex min-[998px]:basis-5/12 grow justify-end items-baseline gap-10"
         >
-          <div>
+          <div class="mb-7">
             <button
-              class="inline-flex justify-center items-center background-c-red uppercase font-semibold text-white py-4 px-8 mb-7 text-sm border border-transparent btn-hover"
+              class="inline-flex justify-center items-center background-c-red uppercase font-semibold text-white py-4 px-8 text-sm border border-transparent btn-hover"
             >
               оформити замовлення
             </button>
@@ -544,7 +499,7 @@
         class="container-catalogue ml-auto mr-auto pl-2.5 pr-2.5 max-w-7xl box-content min-[1024px]:p-20 min-[1024px]:pt-0 min-[768px]:p-10 min-[768px]:pt-0"
       >
         <div class="logo-footer flex justify-center pt-5 mb-5">
-          <img src="images/etnodim-logo.png" width="184" height="48" alt="" />
+          <img src="src/images/etnodim-logo.png" width="184" height="48" alt="" />
         </div>
 
         <nav

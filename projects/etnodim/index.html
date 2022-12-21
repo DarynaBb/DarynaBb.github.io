@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="dist/output1.css" />
-    <link rel="stylesheet" href="file.js" />
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div
-      class="container-catalogue ml-auto mr-auto p-2.5 max-w-7xl box-content min-[1024px]:p-20 min-[768px]:p-10 min-[768px]:pb-0 min-[1024px]:pb-0"
+      class="container-catalogue ml-auto mr-auto p-2.5 max-w-7xl box-content min-[1024px]:p-6 min-[768px]:p-5 min-[768px]:pb-0 min-[1024px]:pb-0"
     >
       <header class="flex justify-between items-center mb-7 relative lg:mb-12">
         <nav>
@@ -42,9 +40,9 @@
               </label>
 
               <div class="burger-m pt-2 pr-5 pb-5 pl-2.5">
-                <header class="flex justify-start items-center mb-7 gap-28">
+                <div class="flex justify-start items-center mb-7 gap-28">
                   <label
-                    lass="burger-label inline-flex hover:cursor-pointer hover-svg-red"
+                    class="burger-label inline-flex hover:cursor-pointer hover-svg-red"
                     for="burger"
                   >
                     <svg
@@ -74,13 +72,13 @@
                   </label>
                   <div>
                     <img
-                      src="images/etnodim-logo.png"
+                      src="src/images/etnodim-logo.png"
                       width="95"
                       height="25"
                       alt=""
                     />
                   </div>
-                </header>
+                </div>
                 <ul class="dela-gothic text-lg uppercase">
                   <li class="mb-12">
                     <a class="inline-flex gap-3 items-center" href="index.html">
@@ -188,66 +186,51 @@
           </div>
         </nav>
 
-        <div class="logo logo-header absolute">
-          <img src="images/etnodim-logo.png" width="184" height="48" alt="" />
+        <div class="logo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img src="src/images/etnodim-logo.png" width="184" height="48" alt="" />
         </div>
         <nav>
           <ul class="flex gap-4">
             <li class="hidden min-[998px]:flex items-center gap-1.5">
-              <span>UA</span>
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1 1L5 5L9 1" stroke="black" />
-              </svg>
+              <label>
+                <select name="language" class="cursor-pointer outline-none">
+                  <option value="ru">UA</option>
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                </select>
+              </label>
             </li>
             <li class="hidden min-[998px]:flex items-center gap-1.5">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.4633 12.0933H8.71667C9.34138 11.8094 10.0182 11.5958 10.717 11.3779C11.9814 10.984 13.2826 10.5757 14.3411 9.686H17.4633C17.7165 9.686 17.9216 9.48083 17.9216 9.22767C17.9216 8.97451 17.7165 8.76934 17.4633 8.76934H15.1646C15.7073 7.91932 15.8413 6.87679 15.5129 5.81273C15.0273 4.23936 13.6387 2.92416 12.1359 2.61442C10.7407 2.32653 9.18501 2.64092 7.97651 3.45482C6.91948 4.16667 6.21891 5.2015 6.00353 6.36917C5.9577 6.61803 6.12223 6.85723 6.37127 6.90306C6.61978 6.94746 6.85915 6.78454 6.90516 6.53532C7.07524 5.61221 7.6376 4.78828 8.48856 4.21537C9.49689 3.5361 10.7901 3.27184 11.9511 3.51247C13.141 3.75739 14.2457 4.81478 14.637 6.08307C14.8139 6.65599 14.9768 7.75492 14.0827 8.67874C14.0513 8.71124 14.0164 8.73809 13.9842 8.76934H4.53597C4.28281 8.76934 4.07764 8.97451 4.07764 9.22767C4.07764 9.48083 4.28281 9.686 4.53597 9.686H12.6532C11.9726 10.0218 11.222 10.2603 10.4444 10.5028C9.22975 10.8815 7.97969 11.2736 6.93998 12.0933H4.53597C4.28281 12.0933 4.07764 12.2985 4.07764 12.5517C4.07764 12.8048 4.28281 13.01 4.53597 13.01H6.07403C5.34472 14.1398 5.32463 15.7014 6.08481 17.0505C7.06862 18.7961 8.97912 19.4875 10.8125 19.4875C11.4498 19.4875 12.0779 19.4041 12.6544 19.2523C15.0692 18.616 16.5667 16.9248 16.5627 14.839C16.5624 14.5859 16.3572 14.3814 16.1044 14.3814C16.1041 14.3814 16.1037 14.3814 16.1037 14.3814C15.8505 14.3818 15.6457 14.5877 15.6461 14.8405C15.65 16.8124 13.9825 17.9543 12.4209 18.3657C10.4551 18.8831 7.92191 18.4434 6.88332 16.6007C6.3147 15.5913 6.16592 14.0624 7.1832 13.0913C7.21366 13.0622 7.24703 13.038 7.27811 13.01H17.4633C17.7165 13.01 17.9216 12.8048 17.9216 12.5517C17.9216 12.2985 17.7165 12.0933 17.4633 12.0933Z"
-                  fill="#1D1C1A"
-                />
-              </svg>
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1 1L5 5L9 1" stroke="black" />
-              </svg>
+              <label>
+                <select name="currency" class="cursor-pointer outline-none">
+                  <option value="hryvnya">₴</option>
+                  <option value="us-dollar">$</option>
+                  <option value="eur">€</option>
+                </select>
+              </label>
             </li>
             <li class="hidden min-[998px]:flex gap-2.5">
               <a href="tel:+380978889292">+38 097 888 92 92</a>
             </li>
             <li>
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z"
-                  fill="black"
-                />
-                <path
-                  d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z"
-                  fill="black"
-                />
-              </svg>
+              <button class="cursor-pointer">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
             </li>
             <li>
               <a href="cart.html">
@@ -276,30 +259,12 @@
       </header>
 
       <div class="hidden min-[998px]:flex justify-start mb-11">
-        <ul class="flex gap-1.5">
+        <ul class="flex gap-1.5 breadcrumbs">
           <li class="flex items-center gap-1.5">
             <a href="#" class="font-semibold">Головна</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
           </li>
           <li class="flex items-center gap-1.5 font-semibold">
             <a href="#" class="font-semibold">Жінкам</a>
-            <svg
-              width="25"
-              height="1"
-              viewBox="0 0 25 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="25" height="0.7" fill="black" />
-            </svg>
           </li>
           <li>Жіночі вишиванки</li>
         </ul>
@@ -315,7 +280,7 @@
             />
             <label
               for="size-filter"
-              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5"
+              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer"
               >Розмір
               <svg
                 width="10"
@@ -371,7 +336,7 @@
             />
             <label
               for="color-filter"
-              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5"
+              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer"
               >Колір
               <svg
                 width="10"
@@ -415,7 +380,7 @@
             />
             <label
               for="season-filter"
-              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5"
+              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer"
               >Сезон
               <svg
                 width="10"
@@ -448,7 +413,7 @@
             />
             <label
               for="fabric-filter"
-              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5"
+              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer"
               >Тканина
               <svg
                 width="10"
@@ -479,7 +444,7 @@
             />
             <label
               for="sleeve-filter"
-              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5"
+              class="filter-label text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer"
               >Рукав
               <svg
                 width="10"
@@ -509,6 +474,7 @@
         <div class="basis-10/12">
           <div class="min-[998px]:flex justify-between items-center">
             <div class="filter-icons hidden min-[998px]:flex min-[998px]:gap-2">
+              <button class="sort-active">
               <svg
                 width="14"
                 height="14"
@@ -521,6 +487,8 @@
                 <rect x="8" width="6" height="6" fill="#C4C4C4" />
                 <rect width="6" height="6" fill="#C4C4C4" />
               </svg>
+            </button>
+            <button>
               <svg
                 width="14"
                 height="14"
@@ -538,18 +506,19 @@
                 <rect x="10" y="5" width="4" height="4" fill="#C4C4C4" />
                 <rect x="10" width="4" height="4" fill="#C4C4C4" />
               </svg>
+            </button>
 
               <div
                 class="hidden min-[998px]:flex filter-item text-xs items-center gap-1.5"
               >
                 <input
-                  class="input invisible relative -z-1"
+                  class="input invisible relative -z-1 "
                   type="checkbox"
                   id="new-filter"
                 />
                 <label
                   for="new-filter"
-                  class="filter-label inline-flex items-center gap-1.5"
+                  class="filter-label inline-flex items-center gap-1.5 cursor-pointer"
                   >Сортувати за: новинки
                   <svg
                     width="10"
@@ -563,7 +532,9 @@
                 </label>
               </div>
             </div>
-            <h1 class="flex justify-end mb-5 md:text-4xl">Жіночі вишиванки</h1>
+            <div class="mb-5">
+              <h1 class="flex justify-end md:text-4xl">Жіночі вишиванки</h1>
+            </div>
           </div>
 
           <section class="flex justify-between mb-5">
@@ -575,7 +546,7 @@
                   id="filter"
                 />
                 <div class="filter-wrapper-label z-2">
-                  <label for="filter" class="inline-flex items-center gap-1.5"
+                  <label for="filter" class="inline-flex items-center gap-1.5 cursor-pointer"
                     >Фільтри
                     <svg
                       width="10"
@@ -778,7 +749,7 @@
               />
               <label
                 for="new-filter-mob"
-                class="filter-label inline-flex items-center gap-1.5"
+                class="filter-label inline-flex items-center gap-1.5 cursor-pointer"
                 >Сортувати за: новинки
                 <svg
                   width="10"
@@ -801,12 +772,12 @@
                 <a class="cursor-pointer" href="#">
                   <figure class="mb-1.5">
                     <picture class="">
-                      <source srcset="images/lito.webp" type="image/webp" />
+                      <source srcset="src/images/lito.webp" type="image/webp" />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/lito.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/lito.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-svitanok"
                       />
                     </picture>
@@ -818,16 +789,16 @@
                 </a>
               </li>
 
-              <li class="grid justify-end">
+              <li>
                 <a href="#">
                   <figure class="mb-1.5">
                     <picture>
-                      <source srcset="images/fialka.webp" type="image/webp" />
+                      <source srcset="src/images/fialka.webp" type="image/webp" />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/fialka.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/fialka.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-fialka"
                       />
                     </picture>
@@ -844,14 +815,14 @@
                   <figure class="mb-1.5">
                     <picture class="">
                       <source
-                        srcset="images/nezalezhni.webp"
+                        srcset="src/images/nezalezhni.webp"
                         type="image/webp"
                       />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/nezalezhni.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/nezalezhni.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-nezalezhni"
                       />
                     </picture>
@@ -863,16 +834,16 @@
                 </a>
               </li>
 
-              <li class="grid justify-end">
+              <li>
                 <a href="#">
                   <figure class="mb-1.5">
                     <picture class="">
-                      <source srcset="images/kashtan.webp" type="image/webp" />
+                      <source srcset="src/images/kashtan.webp" type="image/webp" />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/kashtan.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/kashtan.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-kashtan"
                       />
                     </picture>
@@ -888,12 +859,12 @@
                 <a href="#">
                   <figure class="mb-1.5">
                     <picture class="">
-                      <source srcset="images/indi.webp" type="image/webp" />
+                      <source srcset="src/images/indi.webp" type="image/webp" />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/indi.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/indi.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-indi"
                       />
                     </picture>
@@ -905,16 +876,16 @@
                 </a>
               </li>
 
-              <li class="grid justify-end">
+              <li>
                 <a href="#">
                   <figure class="mb-1.5">
                     <picture class="">
-                      <source srcset="images/svitanok.webp" type="image/webp" />
+                      <source srcset="src/images/svitanok.webp" type="image/webp" />
                       <img
-                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover"
-                        src="images/svitanok.jpg"
-                        width="500"
-                        height="500"
+                        class="min-[998px]:aspect-square min-[998px]:object-top min-[998px]:object-cover article-img"
+                        src="src/images/svitanok.jpg"
+                        width="600"
+                        height="600"
                         alt="vyshyvanka-svitanok"
                       />
                     </picture>
@@ -981,7 +952,7 @@
         class="container-catalogue ml-auto mr-auto pl-2.5 pr-2.5 max-w-7xl box-content min-[1024px]:p-20 min-[1024px]:pt-0 min-[768px]:p-10 min-[768px]:pt-0"
       >
         <div class="logo-footer flex justify-center pt-5 mb-5">
-          <img src="images/etnodim-logo.png" width="184" height="48" alt="" />
+          <img src="src/images/etnodim-logo.png" width="184" height="48" alt="" />
         </div>
 
         <nav

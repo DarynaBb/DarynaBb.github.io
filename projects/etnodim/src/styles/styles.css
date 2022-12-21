@@ -2,11 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -73,12 +68,6 @@ h1 {
   color: #565656;
 }
 
-.logo-header {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .hover-red:hover {
   color: #da1f39;
   font-weight: 700;
@@ -97,6 +86,10 @@ h1 {
 .filter-icons svg:hover rect {
   fill: #565656;
   cursor: pointer;
+}
+
+.sort-active svg rect {
+  fill: #565656;
 }
 
 .input:checked ~ .form {
@@ -119,12 +112,14 @@ h1 {
 }
 
 .filter-wrapper-mob {
-  display: none;
-  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .input:checked ~ .filter-wrapper-label .filter-wrapper-mob {
   display: flex;
+  max-height: 1000px;
   gap: 93px;
   padding-right: 21px;
 }
@@ -161,12 +156,9 @@ h1 {
   color: rgba(176, 176, 176, 1);
 }
 
-.basis-footer {
-  flex-basis: 37.5%;
-}
-
 .burger-m {
   display: none;
+  
 }
 
 .input-burger:checked ~ .burger-m {
@@ -175,6 +167,7 @@ h1 {
 
 .input-burger:checked ~ label svg {
   display: none;
+  
 }
 
 .input-burger:checked ~ .burger-m {
@@ -185,11 +178,38 @@ h1 {
   z-index: 3;
   background-color: #fff;
   box-shadow: 6px 6px 8px 0px #b2b2b240;
+  transition: height 1s linear;
 }
 
 .txt-col-red {
   color: #da1f39;
 }
+
+.background-c-red {
+  background-color: #da1f39;
+}
+
+.btn-hover:hover {
+  background-color: #fff;
+  border: 1px solid #da1f39;
+  color: #da1f39;
+}
+
+.article-img {
+  aspect-ratio: 168 / 200;
+  object-fit: cover;
+}
+
+.breadcrumbs li::after {
+  content: '';
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+}
+
+.breadcrumbs li:last-of-type::after {
+  display: none;
+} 
 
 @media (max-width: 768px) {
   .logo {
