@@ -92,8 +92,15 @@ h1 {
   fill: #565656;
 }
 
+.form {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
 .input:checked ~ .form {
-  display: block;
+  max-height: 1000px;
+  margin-top: 10px;
 }
 
 .input:checked + label svg {
@@ -158,7 +165,6 @@ h1 {
 
 .burger-m {
   display: none;
-  
 }
 
 .input-burger:checked ~ .burger-m {
@@ -167,7 +173,6 @@ h1 {
 
 .input-burger:checked ~ label svg {
   display: none;
-  
 }
 
 .input-burger:checked ~ .burger-m {
@@ -180,7 +185,6 @@ h1 {
   background-color: #fff;
   box-shadow: 6px 6px 8px 0px #b2b2b240;
   max-width: 440px;
-
 }
 
 .txt-col-red {
@@ -203,7 +207,7 @@ h1 {
 }
 
 .breadcrumbs li::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 1px;
   background-color: #000;
@@ -211,7 +215,7 @@ h1 {
 
 .breadcrumbs li:last-of-type::after {
   display: none;
-} 
+}
 
 .select {
   -webkit-appearance: none;

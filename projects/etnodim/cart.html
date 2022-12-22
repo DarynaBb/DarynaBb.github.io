@@ -195,28 +195,48 @@
           </a>
         </div>
         <nav>
-          <ul class="flex gap-4">
-            <li class="hidden min-[998px]:flex items-center gap-1.5">
-              <label>
-              <select name="currency" class="cursor-pointer outline-none">
-                <option value="ru">UA</option>
-                <option value="ru">RU</option>
-                <option value="en">EN</option>
-              </select>
-            </label>
+          <ul class="flex gap-4 items-center">
+            <li class="hidden min-[998px]:flex items-center gap-1.5"> 
+              <div class="relative">
+                <div class="inline-flex items-center gap-1.5 cursor-pointer">
+                  <span>UA</span>
+                  <span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L9 1" stroke="black"/>
+                    </svg>
+                  </span>
+                </div>
+                <label>
+                  <select name="language" class="select cursor-pointer">
+                    <option value="ru">UA</option>
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                  </select>
+                </label>
+              </div>
             </li>
-            <li class="hidden min-[998px]:flex items-center gap-1.5">
+          <li class="hidden min-[998px]:flex items-center gap-1.5">
+            <div class="relative">
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4633 10.0937H4.71667C5.34138 9.80976 6.01822 9.59613 6.71702 9.37826C7.98138 8.98434 9.28262 8.57611 10.3411 7.68637H13.4633C13.7165 7.68637 13.9216 7.48119 13.9216 7.22804C13.9216 6.97488 13.7165 6.7697 13.4633 6.7697H11.1646C11.7073 5.91968 11.8413 4.87715 11.5129 3.8131C11.0273 2.23972 9.63872 0.924522 8.13589 0.614789C6.74066 0.326898 5.18501 0.641286 3.97651 1.45519C2.91948 2.16703 2.21891 3.20187 2.00353 4.36954C1.9577 4.6184 2.12223 4.85759 2.37127 4.90343C2.61978 4.94783 2.85915 4.78491 2.90516 4.53569C3.07524 3.61257 3.6376 2.78865 4.48856 2.21573C5.49689 1.53647 6.79007 1.27221 7.95112 1.51284C9.141 1.75776 10.2457 2.81515 10.637 4.08344C10.8139 4.65636 10.9768 5.75528 10.0827 6.67911C10.0513 6.71161 10.0164 6.73846 9.98424 6.7697H0.53597C0.282813 6.7697 0.0776367 6.97488 0.0776367 7.22804C0.0776367 7.48119 0.282813 7.68637 0.53597 7.68637H8.65317C7.97256 8.02213 7.22197 8.26067 6.44435 8.50313C5.22975 8.88182 3.97969 9.27395 2.93998 10.0937H0.53597C0.282813 10.0937 0.0776367 10.2989 0.0776367 10.552C0.0776367 10.8052 0.282813 11.0104 0.53597 11.0104H2.07403C1.34472 12.1401 1.32463 13.7017 2.08481 15.0509C3.06862 16.7965 4.97912 17.4879 6.81245 17.4879C7.44982 17.4879 8.07788 17.4045 8.65438 17.2526C11.0692 16.6163 12.5667 14.9252 12.5627 12.8394C12.5624 12.5862 12.3572 12.3818 12.1044 12.3818C12.1041 12.3818 12.1037 12.3818 12.1037 12.3818C11.8505 12.3821 11.6457 12.588 11.6461 12.8408C11.65 14.8127 9.98247 15.9546 8.42091 16.3661C6.45509 16.8835 3.92191 16.4438 2.88332 14.6011C2.3147 13.5917 2.16592 12.0627 3.1832 11.0916C3.21366 11.0626 3.24703 11.0384 3.27811 11.0104H13.4633C13.7165 11.0104 13.9216 10.8052 13.9216 10.552C13.9216 10.2989 13.7165 10.0937 13.4633 10.0937Z" fill="#1D1C1A"/>
+                  </svg>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="black"/>
+                </svg>
+              <div>
               <label>
-                <select name="currency" class="cursor-pointer outline-none">
+                <select name="currency" class="select cursor-pointer w-full">
                   <option value="hryvnya">₴</option>
                   <option value="us-dollar">$</option>
                   <option value="eur">€</option>
                 </select>
               </label>
-            </li>
-            <li class="hidden min-[998px]:flex gap-2.5">
-              <a href="tel:+380978889292">+38 097 888 92 92</a>
-            </li>
+            </div>
+          </li>
+          <li class="hidden min-[998px]:flex gap-2.5">
+            <a href="tel:+380978889292">+38 097 888 92 92</a>
+          </li>
             <li>
               <button class="cursor-pointer">
                 <svg
