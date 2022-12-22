@@ -137,9 +137,11 @@ form {
 
 .project-type {
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.55);
   color: #c4c4c4;
   appearance: none;
+  -webkit-appearance: none;
   background-color: transparent;
   padding-bottom: 5px;
   width: 100%;
