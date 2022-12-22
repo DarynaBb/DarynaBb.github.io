@@ -14,38 +14,40 @@
       <div class="container">
         <header class="header-contact">
           <hgroup>
-            <h1>
-              <span class="header-title hide-mobile">(Booking)</span>
-              <span class="header-title-primary">Send <em>an email</em></span>
-            </h1>
-            <p class="title-contact">
+            <div class="mb-100">
+              <h1>
+                <span class="header-title hide-mobile font-special">(Booking)</span>
+                <span class="header-title-primary">Send <em>an email</em></span>
+              </h1>
+            </div>
+            <p class="title-contact font-special">
               If you have a general or project enquiry, please drop me an email
               — available now
             </p>
           </hgroup>
         </header>
-        <form action="result.html" method="POST">
+        <form action="/result" method="POST">
           <div class="form-email">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Your email" required />
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input font-special" type="email" id="email" placeholder="Your email"/>
           </div>
           <div class="form-name">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required />
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input font-special" type="text" id="name" pattern="[a-zA-Z][a-zA-Z ]{2,}" placeholder="Your name" />
           </div>
           <div class="form-message">
-            <label for="message">Message</label>
-            <input
+            <label class="form-label" for="message">Message</label>
+            <input class="form-input font-special"
               type="text"
               id="message"
               placeholder="Start typing here"
-              required
+              
             />
           </div>
           <div class="project-type-container">
-            <label>Project type</label>
+            <label class="form-label">Project type</label>
             <select
-              class="project-type"
+              class="project-type font-special"
               name="Project type"
               placeholder="Choose"
             >
@@ -56,7 +58,7 @@
             </select>
           </div>
           <div class="checkbox-container">
-            <input class="checkbox-input" type="checkbox" id="agreement" />
+            <input class="checkbox-input font-special" type="checkbox" id="agreement" />
             <label class="checkbox" for="agreement"
               >I agree to receive ocasional newsletter with latest news and
               updates</label
@@ -75,7 +77,7 @@
                 fill="#D0A049"
               />
             </svg>
-            <button class="btn">Send</button>
+            <button class="btn font-special">Send</button>
           </div>
         </form>
       </div>

@@ -10,7 +10,7 @@ svg {
 }
 
 body {
-  font-family: "Ogg";
+  font-family: "Ogg", 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1;
   min-width: 320px;
@@ -21,7 +21,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
-  max-width: 796px;
+  max-width: 795px;
 }
 
 .header-contact {
@@ -29,27 +29,28 @@ body {
   margin-bottom: 100px;
 }
 
-h1 {
+
+.mb-100 {
   margin-bottom: 100px;
+}
+
+.font-special {
+  font-family: "TradeGothic LT", Verdana, Tahoma, sans-serif;
 }
 
 h1 {
   display: inline-flex;
-  align-items: flex-start;
   gap: 109px;
 }
 
 .header-title {
-  font-family: "TradeGothic LT";
   line-height: 1.75;
   font-weight: 400;
   opacity: 0.55;
 }
 
 .header-title-primary {
-  font-family: "Ogg";
   font-size: 60px;
-  font-weight: 400;
 }
 
 em {
@@ -58,14 +59,14 @@ em {
 }
 
 .title-contact {
-  font-family: "TradeGothic LT";
   color: #71870e;
-  padding-right: 35px;
-  padding-left: 342px;
+  margin-right: 33px;
+  margin-left: auto;
   line-height: 1.75;
+  max-width: 419px;
 }
 
-label {
+.form-label {
   display: block;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -73,16 +74,17 @@ label {
 
 form {
   margin-left: 191px;
-  max-width: 605px;
 }
 
-input {
-  border: none;
+.form-input {
+  border: 1px solid transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.55);
-  font-family: "TradeGothic LT";
   display: block;
   padding-bottom: 5px;
   width: 100%;
+  box-shadow: none;
+  transition: border-color .5s ease-in-out, box-shadow .5s ease-in-out;
+  background-clip: padding-box;
   
 }
 
@@ -93,13 +95,15 @@ input {
     margin-bottom: 50px;
 }
 
-input::placeholder {
+.form-input::placeholder {
   color: #c4c4c4;
 }
 
-input:focus {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+.form-input:focus-within {
+  border: 1px solid rgba(113, 135, 14, .1);
   outline: none;
+  
+  box-shadow: 0px 0.1em 0.3em rgba(113, 135, 14, .6);
 }
 
 .checkbox-container {
@@ -118,6 +122,13 @@ input:focus {
   margin-left: 151px;
 }
 
+
+.form-input:invalid {
+  border: none;
+  outline: 1px solid 	rgba(250, 128, 114, 1);
+  box-shadow:  0px 0.1em 0.3em rgba(250, 128, 114, 0.6);  
+}
+
 .checkbox-container input {
   display: inline;
   width: auto;
@@ -128,8 +139,6 @@ input:focus {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.55);
   color: #c4c4c4;
-  font-family: "TradeGothic LT";
-  font-weight: 400;
   appearance: none;
   background-color: transparent;
   padding-bottom: 5px;
@@ -138,6 +147,7 @@ input:focus {
 
 select:focus {
   outline: none;
+  color: black;
 }
 
 select {
@@ -148,8 +158,11 @@ select {
   background-position-y: calc(100% - 10px);
 }
 
+select option {
+  color:black;
+}
+ 
 .btn {
-  font-family: "TradeGothic LT";
   color: #d0a049;
   border: none;
   background: none;
