@@ -1,5 +1,5 @@
 body {
-  font-family: "Basis Grotesque Pro", Arial, Helvetica, sans-serif;
+  font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -104,20 +104,14 @@ body {
 
 @media (max-width: 767px) {
   .problematic-row {
-    gap: 40px;
+    gap: 20px;
+    flex-direction: column;
+   
   }
 
   .row-infographic {
     flex-wrap: wrap;
     gap: 30px;
-  }
-
-  .problematic-column-left {
-    flex: 0 0 20%;
-  }
-
-  .problematic-column-right {
-    flex: 0 0 75%;
   }
 
   .row-infographic-title {
@@ -137,10 +131,14 @@ body {
   }
 
   .problematic-column-right-text {
-    max-width: 200px;
+    max-width: 100%;
   }
 
   .problematic-hgroup {
     margin-bottom: 30px;
   }
+
+  .problematic-column-left {
+    display: block;
+}
 }

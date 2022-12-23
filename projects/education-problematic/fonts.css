@@ -1,63 +1,29 @@
 @font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Regular.woff2) format('woff2');
+    font-family: 'Basis Grotesque Pro';
+    src: url(fonts/BasisGrotesqueArabicPro-Regular.woff2) format('woff2'),
+         url(fonts/BasisGrotesqueArabicPro-Regular.woff) format('woff'),
+         url(fonts/BasisGrotesqueArabicPro-Regular.ttf) format('opentype');
     font-weight: 400;
     font-display: optional;
 }
 
 @font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Medium.woff2) format('woff2');
+    font-family: 'Basis Grotesque Pro';
+    src: url(fonts/BasisGrotesqueArabicPro-Medium.woff2) format('woff2'),
+        url(fonts/BasisGrotesqueArabicPro-Medium.woff) format('woff'),
+        url(fonts/BasisGrotesqueArabicPro-Medium.ttf) format('opentype');
     font-weight: 500;
     font-display: optional;
 }
 
 @font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Bold.woff2) format('woff2');
+    font-family: 'Basis Grotesque Pro';
+    src: url(fonts/BasisGrotesqueArabicPro-Bold.woff2) format('woff2'),
+        url(fonts/BasisGrotesqueArabicPro-Bold.woff) format('woff'),
+        url(fonts/BasisGrotesqueArabicPro-Bold.ttf) format('opentype');
     font-weight: 700;
     font-display: optional;
 }
 
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Regular.woff) format('woff');
-    font-weight: 400;
-    font-display: optional;
-}
 
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Medium.woff) format('woff');
-    font-weight: 500;
-    font-display: optional;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Bold.woff) format('woff');
-    font-weight: 700;
-    font-display: optional;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Regular.ttf) format('opentype');
-    font-weight: 400;
-    font-display: optional;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Medium.ttf) format('opentype');
-    font-weight: 500;
-    font-display: optional;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
-    src: url(fonts/BasisGrotesqueArabicPro-Bold.ttf) format('opentype');
-    font-weight: 700;
-    font-display: optional;
-}
 
