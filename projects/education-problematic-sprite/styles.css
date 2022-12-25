@@ -1,0 +1,144 @@
+body {
+  font-family: 'Basis Grotesque Pro', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1380px;
+  padding: 20px;
+}
+
+.problematic-row {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 70px;
+}
+.problematic-column-left {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.problematic-column-left-text {
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.35;
+}
+.problematic-column-right {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 46%;
+}
+
+.problematic-hgroup {
+  margin-bottom: 70px;
+  max-width: 488px;
+}
+.hgroup-title {
+  font-weight: 700;
+  color: #0536fc;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hgroup-subtitle {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.problematic-column-right-text {
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.6;
+  max-width: 365px;
+}
+
+.row-infographic {
+  justify-content: flex-end;
+}
+
+.row-infographic-item {
+  flex: 0 0 19%;
+}
+
+.row-infographic-title {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.row-infographic-title-text {
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: -8px;
+}
+
+.row-infographic-item-text {
+  color: #000000;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+  .problematic-row {
+    gap: 50px;
+  }
+
+  .row-infographic-title {
+    gap: 10px;
+  }
+
+  .row-infographic {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .problematic-row {
+    gap: 20px;
+    flex-direction: column;
+   
+  }
+
+  .row-infographic {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .row-infographic-title {
+    gap: 5px;
+  }
+
+  .row-infographic-item {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hgroup-subtitle {
+    font-size: 25px;
+  }
+
+  .problematic-column-right-text {
+    max-width: 100%;
+  }
+
+  .problematic-hgroup {
+    margin-bottom: 30px;
+  }
+
+  .problematic-column-left {
+    display: block;
+}
+}
