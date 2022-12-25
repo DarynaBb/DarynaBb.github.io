@@ -1,0 +1,130 @@
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #e5e5e5;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+  padding: 23px 32px 30px;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.color-grey {
+  color: rgba(60, 60, 67, 0.5);
+}
+
+.text-grey {
+  color: rgba(60, 60, 67, 0.85);
+}
+
+.lead-paragraph {
+  line-height: 1.4;
+}
+
+.accordion-item {
+  background-color: #fff;
+  padding: 55px 60px 34px;
+  margin-bottom: 3px;
+}
+
+.accordion-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header-number {
+  flex-basis: 10%;
+  flex-grow: 0;
+  padding-right: 10px;
+  font-size: 48px;
+}
+
+.header-label {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 85%;
+  flex-grow: 1;
+  padding-left: 10px;
+  gap: 10px;
+  font-size: 32px;
+}
+
+.accordion-text {
+  max-height: 0px;
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  flex-basis: 100%;
+}
+
+.header-input:checked ~ .accordion-text {
+  max-height: 1000px;
+  max-width: 1000px;
+  opacity: 1;
+  margin-top: 34px;
+  transition: opacity 1.5s ease;
+}
+
+.header-label svg {
+  transition: all 1s ease;
+  flex-shrink: 0;
+}
+
+.header-input:checked ~ .header-label svg {
+  transform: rotate(45deg);
+}
+
+.header-input:checked ~ .header-label svg rect {
+  fill: black;
+}
+
+.header-input:checked ~ .header-label svg path {
+  fill: white;
+}
+
+.mt-34 {
+  margin-top: 34px;
+}
+
+.header-input {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-number {
+    font-size: 32px;
+  }
+  .header-label {
+    font-size: 28px;
+  }
+  .accordion-text {
+    font-size: 18px;
+  }
+}
+.accordion-item {
+  padding: 40px 32px;
+}
+
+@media (max-width: 576px) {
+  .header-label {
+    font-size: 20px;
+    padding-left: 0;
+  }
+  .accordion-item {
+    padding: 16px 32px;
+  }
+} /*# sourceMappingURL=styles.css.map */
