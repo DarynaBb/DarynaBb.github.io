@@ -120,6 +120,16 @@ body {
   left: 0;
 }
 
+.border-transparent {
+  border: 1px solid transparent;
+}
+
+.btn-hover:hover {
+  background-color: white !important;
+  border: 1px solid #0536fc !important;
+  color: #0536fc !important;
+}
+
 @media (min-width: 576px) {
   .p-sm-10 {
     padding: 10px;
