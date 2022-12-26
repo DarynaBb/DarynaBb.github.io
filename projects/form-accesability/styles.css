@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "Ogg", 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1;
+  min-width: 320px;
+  font-weight: 400;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 795px;
+}
+
+.header-contact {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.font-special {
+  font-family: "TradeGothic LT", Verdana, Tahoma, sans-serif;
+}
+
+h1 {
+  display: inline-flex;
+  gap: 109px;
+}
+
+.header-title {
+  line-height: 1.75;
+  font-weight: 400;
+  opacity: 0.55;
+}
+
+.header-title-primary {
+  font-size: 60px;
+}
+
+em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.title-contact {
+  color: #4f5f0a;
+  margin-right: 33px;
+  margin-left: auto;
+  line-height: 1.75;
+  max-width: 419px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+form {
+  margin-left: 191px;
+}
+
+.form-input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  display: block;
+  padding-bottom: 5px;
+  width: 100%;
+  box-shadow: none;
+  transition: border-color .5s ease-in-out, box-shadow .5s ease-in-out;
+  background-clip: padding-box;
+  
+}
+
+.form-email,
+.form-name,
+.form-message,
+.project-type-container {
+    margin-bottom: 50px;
+}
+
+.form-input::placeholder {
+  color: #c4c4c4;
+}
+
+.form-input:focus-within {
+  border: 1px solid rgba(113, 135, 14, .1);
+  outline: none;
+  
+  box-shadow: 0px 0.1em 0.3em rgba(113, 135, 14, .6);
+}
+
+.checkbox-container {
+  margin-bottom: 44px;
+}
+
+.checkbox-container label {
+  display: inline;
+  font-weight: 300;
+}
+
+.form-end {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 151px;
+}
+
+
+.form-input:invalid {
+  
+  border: 2px solid 	rgba(250, 128, 114, 1);
+  box-shadow:  0px 0.1em 0.3em rgba(250, 128, 114, 0.6);  
+}
+
+.checkbox-container input {
+  display: inline;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.project-type {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  color: #c4c4c4;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+select:focus {
+  outline: none;
+  color: black;
+}
+
+select {
+  appearance: none;
+  background-image: url(images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: calc(100% - 10px);
+}
+
+select option {
+  color:black;
+}
+ 
+.btn {
+  color: #6e5426;
+  border: none;
+  background: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  border: 1px solid #d0a049
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  .title-contact {
+    padding-left: 0;
+  }
+
+  .form-end {
+    justify-content: center;
+    margin-left: 0;
+  }
+}

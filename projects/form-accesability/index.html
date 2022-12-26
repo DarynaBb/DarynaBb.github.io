@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header class="header-contact" role="banner">
+          <hgroup>
+            <div class="mb-100">
+              <h1>
+                <span class="header-title hide-mobile font-special">(Booking)</span>
+                <span class="header-title-primary">Send <em>an email</em></span>
+              </h1>
+            </div>
+            <p class="title-contact font-special">
+              If you have a general or project enquiry, please drop me an email
+              - available now
+            </p>
+          </hgroup>
+        </header>
+        <form action="/result" method="POST" role="form" aria-label="contact-form">
+          <div class="form-email">
+            <label class="form-label" for="email" aria-label="form-email">Email</label>
+            <input class="form-input font-special" type="email" id="email" placeholder="Your email"/>
+          </div>
+          <div class="form-name">
+            <label class="form-label" for="name" aria-label="form-name">Name</label>
+            <input class="form-input font-special" type="text" id="name" pattern="[a-zA-Z][a-zA-Z ]{2,}" placeholder="Your name" />
+          </div>
+          <div class="form-message">
+            <label class="form-label" for="message" aria-label="form-message">Message</label>
+            <input class="form-input font-special"
+              type="text"
+              id="message"
+              placeholder="Start typing here"
+              
+            />
+          </div>
+          <div class="project-type-container">
+            <label class="form-label" aria-label="choose-project">Project type
+            <select
+              class="project-type font-special"
+              name="Project type"
+              placeholder="Choose"
+            >
+              <option value="1">Reserve for personal event</option>
+              <option value="2">Buy tickets for a next concert</option>
+              <option value="3">Reserve from a venue</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox-input font-special" type="checkbox" id="agreement" />
+            <label class="checkbox" for="agreement"
+              >I agree to receive ocasional newsletter with latest news and
+              updates</label
+            >
+          </div>
+          <div class="form-end">
+            <svg
+              width="84"
+              height="3"
+              viewBox="0 0 84 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M42.672 0.903998C22.704 0.903998 5.52 0.615999 0.72 0.328C0.144 0.808 0.0480001 2.248 0.816 2.632C5.904 2.248 21.84 1.96 42.48 1.96C63.12 1.96 77.904 2.248 83.184 2.632C83.76 2.248 83.856 0.808 83.088 0.328C78.48 0.615999 62.64 0.903998 42.672 0.903998Z"
+                fill="#6e5426"
+              />
+            </svg>
+            <button class="btn font-special">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Ogg";
+    src: url("fonts/OggLight.woff2") format("woff2"),
+      url("fonts/OggLight.woff") format("woff"),
+      url("fonts/OggLight.otf") format("otf");
+    font-weight: 300;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Ogg";
+    src: url("fonts/OggLightItalic.woff2") format("woff2"),
+      url("fonts/OggLightItalic.woff") format("woff"),
+      url("fonts/OggLightItalic.otf") format("otf");
+    font-display: swap;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Ogg";
+    src: url("fonts/OggMediumItalic.woff2") format("woff2"),
+      url("fonts/OggMediumItalic.woff") format("woff"),
+      url("fonts/OggMediumItalic.otf") format("otf");
+    font-display: swap;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "TradeGothic LT";
+    src: url("fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2"),
+      url("fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff"),
+      url("fonts/Trade\ Gothic\ LT\ Extended.otf") format("otf");
+    font-display: swap;
+    font-weight: 400;
+  }
