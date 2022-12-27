@@ -1,0 +1,136 @@
+body
+    font-family: 'Inter', Arial, Helvetica, sans-serif
+    font-size: 20px
+    font-weight: 400
+    background-color: #E5E5E5
+
+.container 
+    margin-left: auto
+    margin-right: auto
+    max-width: 1180px
+    padding:  23px 32px 30px     
+
+.f-bold 
+    font-weight: 700        
+    
+.uppercase 
+    text-transform: uppercase
+
+.color-grey 
+    color: rgba(60, 60, 67, 0.5)  
+
+.text-grey 
+    color: rgba(60, 60, 67, 0.85)    
+
+.lead-paragraph 
+    line-height: 1.4  
+
+.accordion-item
+    background-color: #fff 
+    padding: 55px 60px 34px 
+    margin-bottom: 3px
+    display: flex
+    gap: 52px
+
+.accordion-header 
+   display: flex
+   flex-wrap: wrap
+   align-items: flex-start
+   justify-content: space-between
+   margin-bottom: 10px
+    
+    
+.header-number 
+     flex-grow: 0
+     font-size: 48px  
+
+.grow 
+    flex-grow: 1    
+
+.header-label  
+    display: flex
+    justify-content: space-between
+    gap: 10px
+    font-size: 32px
+    cursor: pointer
+    
+
+
+.accordion-text 
+    max-height: 0px
+    max-width: 0px
+    opacity: 0
+    overflow: hidden
+    transition: max-height 1s ease, opacity 2s ease
+     
+
+.header-input:checked ~ .wrapper .accordion-text 
+   max-height: 200px
+   max-width: 900px
+   opacity: 1   
+   margin-top: 34px
+   
+
+.header-label svg 
+    transition: all 1.5s ease   
+    flex-shrink: 0
+
+.btn 
+    border: 0
+    background-color: transparent  
+    cursor: pointer  
+   
+.header-input:checked ~ .wrapper .header-label svg 
+    transform: rotate(45deg)
+
+.header-input:checked ~ .wrapper .header-label .cross svg 
+    fill: white
+
+.header-input:checked ~ .wrapper .header-label .cross 
+    background-color: black    
+
+
+// .header-input:checked ~ .wrapper .header-label  svg rect
+//     fill: black 
+
+// .header-input:checked ~ .wrapper .header-label svg path 
+//     fill: white
+
+.mt-34 
+    margin-top: 34px  
+
+.header-input 
+    display: none 
+
+.cross 
+    display: inline-flex
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background-color: #F3F5F6
+
+@media (max-width: 768px)
+    .header-number 
+        font-size: 32px
+
+    .header-label 
+        font-size: 28px
+
+    .accordion-text 
+        font-size: 18px
+
+    .accordion-item 
+        padding: 40px 32px 
+        gap: 32px
+
+            
+
+@media (max-width: 576px)    
+    .header-label 
+        font-size: 20px 
+        padding-left: 0   
+
+    .accordion-item 
+        padding: 16px 32px 
+        flex-wrap: wrap
+        gap: 11px   
