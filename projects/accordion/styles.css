@@ -2,7 +2,7 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
 }
 
 .container {
@@ -36,6 +36,8 @@ body {
   background-color: #fff;
   padding: 55px 60px 34px;
   margin-bottom: 3px;
+  display: flex;
+  gap: 52px;
 }
 
 .accordion-header {
@@ -47,20 +49,20 @@ body {
 }
 
 .header-number {
-  flex-basis: 10%;
   flex-grow: 0;
-  padding-right: 10px;
   font-size: 48px;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .header-label {
   display: flex;
   justify-content: space-between;
-  flex-basis: 85%;
-  flex-grow: 1;
-  padding-left: 10px;
   gap: 10px;
   font-size: 32px;
+  cursor: pointer;
 }
 
 .accordion-text {
@@ -68,32 +70,37 @@ body {
   max-width: 0px;
   opacity: 0;
   overflow: hidden;
-  flex-basis: 100%;
+  transition: max-height 1s ease, opacity 2s ease;
 }
 
-.header-input:checked ~ .accordion-text {
-  max-height: 1000px;
-  max-width: 1000px;
+.header-input:checked ~ .wrapper .accordion-text {
+  max-height: 200px;
+  max-width: 900px;
   opacity: 1;
   margin-top: 34px;
-  transition: opacity 1.5s ease;
 }
 
 .header-label svg {
-  transition: all 1s ease;
+  transition: all 1.5s ease;
   flex-shrink: 0;
 }
 
-.header-input:checked ~ .header-label svg {
+.btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-input:checked ~ .wrapper .header-label svg {
   transform: rotate(45deg);
 }
 
-.header-input:checked ~ .header-label svg rect {
-  fill: black;
+.header-input:checked ~ .wrapper .header-label .cross svg {
+  fill: white;
 }
 
-.header-input:checked ~ .header-label svg path {
-  fill: white;
+.header-input:checked ~ .wrapper .header-label .cross {
+  background-color: black;
 }
 
 .mt-34 {
@@ -102,6 +109,14 @@ body {
 
 .header-input {
   display: none;
+}
+
+.cross {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #F3F5F6;
 }
 
 @media (max-width: 768px) {
@@ -114,11 +129,11 @@ body {
   .accordion-text {
     font-size: 18px;
   }
+  .accordion-item {
+    padding: 40px 32px;
+    gap: 32px;
+  }
 }
-.accordion-item {
-  padding: 40px 32px;
-}
-
 @media (max-width: 576px) {
   .header-label {
     font-size: 20px;
@@ -126,5 +141,7 @@ body {
   }
   .accordion-item {
     padding: 16px 32px;
+    flex-wrap: wrap;
+    gap: 11px;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
