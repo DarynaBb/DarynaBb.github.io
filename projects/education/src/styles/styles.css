@@ -1,0 +1,108 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Basis Grotesque Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container-education {
+  max-width: 1480px;  
+}
+
+.black-35 {
+  color: rgba(0, 0, 0, .35); 
+}
+
+.black-60 {
+  color: rgba(0, 0, 0, .6); 
+}
+
+.black-85 {
+  color: rgba(0, 0, 0, .85);
+}
+
+.txt-blue {
+  color:rgba(5, 54, 252, 1);
+}
+
+.bg-col-blue {
+  background-color: rgba(5, 54, 252, 1);
+}
+
+.txt-hover:hover {
+  color: rgba(5, 54, 252, 1);
+}
+
+.mt-17 {
+  margin-top: 70px;
+}
+
+.mb-25 {
+  margin-bottom: 100px;
+}
+
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.btn-hover:hover {
+  background-color: white;
+  color: rgba(5, 54, 252, 1);
+  border: 1px solid rgba(5, 54, 252, 1);
+}
+
+.m-114 {
+  margin-top: -114px;
+}
+
+.triangle-left {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 21px 21px 21px 0;
+}
+
+.left-white {
+  border-color: transparent #fff transparent transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 21px 0 21px 21px;
+  border-color: transparent transparent transparent #0536FC;
+  }
+
+.right-white {
+  border-color: transparent transparent transparent #fff;
+}  
+
+
+@media (max-width: 767px) {
+  .horizontal {
+    aspect-ratio: 150/100;
+    object-fit: cover;
+    object-position: top;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .icon-blue {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .fs-57 {
+  font-size: 57px;
+  }
+}
