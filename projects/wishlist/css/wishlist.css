@@ -1,0 +1,218 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+body {
+  color: #FC6A57;
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
+  font-family: 'Baloo 2', cursive;
+  font-family: 'Nunito', sans-serif;
+}
+.navigation {
+ display: flex;
+ position: relative;
+ justify-content: space-between;
+ width: 100vw;
+}
+.header-menu {
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 120px;
+    background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
+    align-content: center;
+    justify-content: flex-end;
+    z-index: 20;
+}
+.hm {
+    display: flex;
+  margin: 40px 130px 40px auto;
+}
+.hm li {
+    display: flex;
+}
+.link_menu {
+  display: inline-block;
+  background: transparent;
+  height: 40px;
+  text-decoration: none;
+  color: #FC6A57;
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 22px; 
+  border-radius: 20px;
+  padding:9px 20px ;
+  margin: 0 5px ;
+  justify-content: center;
+  z-index: 100;
+}
+.link_menu:hover {
+  background: #FC6A57;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(31, 56, 101, 0.15) ,0px -6px 10px 0px rgba(255, 255, 255, 1);
+}
+.icon-drm, .icon-br, .icon-gi, .icon-bi, .icon-wish {
+    display: none;
+}
+.wishes {
+  display: flex;
+  position: fixed;
+  height: 120px;
+  background: transparent;
+  z-index: 20;
+  padding: 40px 0 40px 80px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 48px;
+}
+.avatar {
+  max-height: 625px;
+  width: 540px;
+  position: relative;
+  margin: 137px auto 80px 80px;
+  background: url("../images/vector.png") no-repeat left;
+  overflow: inherit;
+}
+.social .avatar .foto img {
+  max-height: 460px;
+  max-width: 460px;
+  margin: 85px auto 168px 100px;
+}
+.social-icon{
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.box {
+  margin: 230px 80px auto 80px;
+  max-width: 640px;
+  font-size: 20px;
+  font-family:Nunito ;
+  line-height: 28px;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.title {
+  max-width: 468px;
+  font-weight: 800;
+  font-family: 'Baloo 2';
+  height: 85px;
+  font-size: 80px;
+}
+.icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: #FFF5F5;
+  margin-right:10px ;
+  justify-content: center;
+}
+.fb{
+  padding: 13px 22px 12px 18px;
+}
+.ins {
+  padding: 15px 22px 15px 14px;
+}
+.counter {
+  position: absolute;
+  height: 318px;
+  width: 318px;
+  border-radius: 50%;
+  background: #FFF5F5;
+  bottom: 0;
+  right: 146px;
+  padding: 120px 75px 5px 75px;
+}
+.counter-text{
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+.counter-clock {
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 47.48%;
+    text-align: center;
+    bottom: 37.42%;
+    font-family: 'Baloo 2';
+    color: #FC6A57;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+}
+
+.away {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: #FFF5F5;
+  bottom: 0;
+  right: 80px;
+  padding: 51px 41px;
+  mix-blend-mode: multiply;
+}
+.icon:hover {
+    background: #FC6A57;
+}
+.icon:hover svg * {
+    fill: #FFF;
+}
