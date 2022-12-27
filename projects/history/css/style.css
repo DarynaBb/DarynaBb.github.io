@@ -309,7 +309,6 @@ and (max-width: 1199px) {
   background: #005BBB;
   padding: 228px 60px 148px;
   color: #fff;
-  box-sizing: border-box;
   z-index: 3;
   }
 .btn-close {
@@ -488,9 +487,6 @@ and (max-width: 850px) {
 } 
 .box {
   margin: 0 auto 24px;
-}
-.input {
- /*max-width: 335px; */
 }
 .textarea {
   display: box;
