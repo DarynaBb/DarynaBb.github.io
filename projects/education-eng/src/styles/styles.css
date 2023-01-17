@@ -1,0 +1,174 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Basis Grotesque Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container-education {
+  max-width: 1480px;  
+}
+
+.black-35 {
+  color: rgba(0, 0, 0, .35); 
+}
+
+.black-60 {
+  color: rgba(0, 0, 0, .6); 
+}
+
+.black-85 {
+  color: rgba(0, 0, 0, .85);
+}
+
+.txt-blue {
+  color:rgba(5, 54, 252, 1);
+}
+
+.bg-col-blue {
+  background-color: rgba(5, 54, 252, 1);
+}
+
+.txt-hover:hover {
+  color: rgba(5, 54, 252, 1);
+}
+
+.mt-17 {
+  margin-top: 70px;
+}
+
+.mb-25 {
+  margin-bottom: 100px;
+}
+
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.btn-hover:hover {
+  background-color: white;
+  color: rgba(5, 54, 252, 1);
+  border: 1px solid rgba(5, 54, 252, 1);
+}
+
+
+
+
+.triangle-left {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 21px 21px 21px 0;
+}
+
+.left-white {
+  border-color: transparent #fff transparent transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 21px 0 21px 21px;
+  border-color: transparent transparent transparent #0536FC;
+}
+
+
+.right-white {
+  border-color: transparent transparent transparent #fff;
+}  
+
+.hover-svg:hover svg path {
+  stroke: #0536FC;
+}
+
+
+.w-450 {
+  max-width: 430px;
+}
+
+.hover-block:hover .left-white {
+  border-color: transparent #0536FC transparent transparent;
+}
+
+.hover-block:hover .right-white {
+  border-color: transparent transparent transparent #0536FC;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .horizontal {
+    aspect-ratio: 150/100;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 45px;
+  }
+
+  .horizontal-school {
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .horizontal-participants {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .horizontal-partners {
+    aspect-ratio: 10/7;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (min-width: 768px) {
+  .m-114 {
+    margin-top: -114px;
+  }
+
+  .w-417 {
+    max-width: 417px;
+  }
+
+  .hover-block:hover {
+    background-color: #0536FC;
+    color:#fff;
+  }
+  
+  .hover-block:hover a {
+    background-color: #fff;
+  }
+  
+  .hover-block:hover .hov-block-txt {
+    color:#fff;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon-blue {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .fs-57 {
+  font-size: 57px;
+  }
+}
