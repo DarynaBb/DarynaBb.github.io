@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="program">
+      <div class="container mx-auto px-5 py-50">
+        <header class="row header-row ps-lg-10 mb-md-100 mb-50">
+          <div class="col-12 col-lg-6">
+            <h2
+              class="header-title color-blue text-uppercase fw-bold m-0 fs-16"
+            >
+              program
+            </h2>
+            <p
+              class="header-subtitle text-uppercase text-black fw-bold my-20 mt-md-30 mb-md-70 fs-30 fs-md-57"
+            >
+              Teach - for Ukraine
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="about-title-text m-0">Educational and public organization.</p>
+            <button class="d-none d-md-block border-0 bg-transparent">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.143 14.3022L15.6061 27.7032V0H14.3939V27.7032L0.857022 14.3022L0 15.1509L14.143 29.1516L15 30L15.857 29.1516L30 15.1509L29.143 14.3022Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <ul class="nav nav-tabs row m-0" id="myTab" role="tablist">
+          <li
+            class="nav-item col-12 col-sm-6 border-tab d-flex justify-content-center p-0"
+            role="presentation"
+          >
+            <button
+              class="nav-link active text-uppercase w-full"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              about us
+            </button>
+          </li>
+          <li
+            class="nav-item col-12 col-sm-6 border-tab d-flex justify-content-center p-0"
+            role="presentation"
+          >
+            <button
+              class="nav-link text-uppercase w-full"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
+            >
+              our work
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active position-relative"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <img
+              class="img-fluid"
+              src="src/images/about.jpg"
+              width="1400"
+              height="1110"
+            />
+            <div
+              class="position-absolute left-0 bottom-sm-0 end-sm-0 bg-white pt-20 p-sm-10 p-md-30 p-lg-50 p-xl-120 col-md-9 col-xl-6"
+            >
+              <header class="mb-10 mb-md-70">
+                <h2 class="color-blue text-uppercase fw-bold m-0 fs-16">
+                  who we are
+                </h2>
+                <p
+                  class="text-uppercase text-black fw-bold mt-10 mt-md-30 mb-0 fs-20 fs-md-25 fs-lg-38"
+                >
+                ambitious team - like-minded people
+                </p>
+              </header>
+              <div class="p-0">
+                <p class="mb-24 mb-lg-100 w-375">
+                  A team of specialists that has been successfully educating
+                  children in underdeveloped villages and cities of Ukraine.
+                </p>
+                <button
+                  class="btn-hover border-transparent text-uppercase  bg-blue py-15 px-35 py-sm-10 px-sm-25 px-md-35 py-md-35 text-white fs-14 fs-md-16"
+                >
+                  become a fellow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade position-relative"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <img
+              class="img-fluid"
+              src="src/images/activity.jpg"
+              width="1440"
+              height="1103"
+            />
+            <div
+              class="position-absolute left-0 bottom-sm-0 end-sm-0 bg-white pt-20 p-sm-10 p-md-30 p-lg-50 p-xl-120 col-sm-9 col-xl-6"
+            >
+              <header class="mb-10 mb-md-70">
+                <h2 class="color-blue text-uppercase fw-bold m-0 fs-16">
+                  our work
+                </h2>
+                <p
+                  class="text-uppercase text-black fw-bold mt-10 mt-md-30 mb-0 fs-20 fs-md-25 fs-lg-38"
+                >
+                why you should - invest in the program
+                </p>
+              </header>
+              <div class="p-0">
+                <p class="mb-24 mb-lg-100 w-375">
+                  "Teach for Ukraine" is an idea of reset, an opportunity
+                  for self-realization of people and a reason to stay in the country.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
