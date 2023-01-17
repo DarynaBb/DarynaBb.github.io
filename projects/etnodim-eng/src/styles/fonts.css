@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Light.woff2) format('woff2'),
+        url(../fonts/Raleway-Light.woff) format('woff'),
+        url(../fonts/Raleway-Light.eot) format('embedded-opentype'),
+        url(../fonts/Raleway-Light.ttf) format('truetype');
+    font-weight: 300;
+   
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.woff2) format('woff2'),
+        url(../fonts/Raleway-Regular.woff) format('woff'),
+        url(../fonts/Raleway-Regular.eot) format('embedded-opentype'),
+        url(../fonts/Raleway-Regular.ttf) format('truetype');
+    font-weight: 400;  
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-SemiBold.woff2) format('woff2'),
+        url(../fonts/Raleway-SemiBold.woff) format('woff'),
+        url(../fonts/Raleway-SemiBold.eot) format('embedded-opentype'),
+        url(../fonts/Raleway-SemiBold.ttf) format('truetype');
+    font-weight: 600; 
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Bold.woff2) format('woff2'),
+        url(../fonts/Raleway-Bold.woff) format('woff'),
+        url(../fonts/Raleway-Bold.eot) format('embedded-opentype'),
+        url(../fonts/Raleway-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'DelaGothic';
+    src: url(../src/fonts/DelaGothicOne-Regular.woff2) format('woff2'),
+        url(../fonts/DelaGothicOne-Regular.woff) format('woff'),
+        url(../fonts/DelaGothicOne-Regular.eot) format('embedded-opentype'),
+        url(../fonts/DelaGothicOne-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.woff2) format('woff2'),
+        url(../fonts/Roboto-Regular.woff) format('woff'),
+        url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    
+}

@@ -1,0 +1,17 @@
+{
+  "name": "etnodim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+
+"scripts": {
+  "build:css": "npx tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css",
+  "watch:css": "npx tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch"
+},
+
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
